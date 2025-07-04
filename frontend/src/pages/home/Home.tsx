@@ -31,13 +31,14 @@ function Home() {
 
   return (
     <>
-      <div className={` container-fluid ${styles.bgMain}`}>
-        <div className="row align-items-center  ">
-          {/* Text Section */}
-          <div className="col-md-6">
-            <div className={styles.cardCustom}>
-              <h1 className="fw-bold fst-italic">Media Planet</h1>
-              <p className="fs-5 fst-italic">
+      <div className={` container ${styles.bgMain} align-items-center  justify-content-center align-align-content-center`}>
+        {/* Header Section */}
+        <div className="row  ">
+          {/* Text  */}
+          <div className="col-md-6 " >
+            <div className={`${styles.cardCustom} m-4`}>
+              <h1 className="">Media Planet</h1>
+              <p className="">
                 Where bold ideas collide with <br />
                 storytelling, tech, and design to <br />
                 create immersive campaigns crafted <br />
@@ -54,10 +55,9 @@ function Home() {
               </div>
             </div>
           </div>
-
-          {/* Image Section */}
-          <div className="col-md-6 text-center ">
-            <img src={TVAline} alt="Alien on TV" className="" height={'300px'} />
+          {/* Image  */}
+          <div className="col-md-6 align-items-center ">
+            <img src={TVAline} alt="Alien on TV" className="img-fluid d-block mx-auto"style={{maxHeight: "300px", objectFit: "contain" }} />
           </div>
         </div>
 

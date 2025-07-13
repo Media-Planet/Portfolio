@@ -1,10 +1,9 @@
+import services from './pages/services/services';
 
 function App() {
 
   return (
-    <>
-      <h1>Welcome to the App!</h1>
-    </>
+    services()
   )
 }
 

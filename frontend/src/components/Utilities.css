@@ -16,18 +16,18 @@
     color: #999FA3 !important;
 }
 
-.font1_italic {
+.Times_New_RomanF_italic {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 500;
 }
 
-.font1 {
+.Times_New_RomanF {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
 }
 
-.font2 {
+.InterF {
     font-family: 'Inter';
     font-size: large;
 }

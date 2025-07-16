@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-LightItalic.woff2') format('truetype');
+    font-weight: 100 900;
+  }
+
+.bg-primary {
+    background-color: #E0DCD5 !important;
+}
+
+.bg-secondary {
+    background-color: #0D0D0D !important;
+}
+
+.text-success {
+    color: #999FA3 !important;
+}
+
+.Times_New_RomanF_italic {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.Times_New_RomanF {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.InterF {
+    font-family: 'Inter';
+    font-size: large;
+}

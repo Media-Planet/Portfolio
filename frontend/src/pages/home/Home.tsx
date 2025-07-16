@@ -31,9 +31,11 @@ function Home() {
 
   return (
     <>
+    
+    
       <div className={` container ${styles.bgMain} align-items-center  justify-content-center align-align-content-center`}>
         {/* Header Section */}
-        <div className="row  ">
+        <div className={`row  align-items-center justify-content-center`}>
           {/* Text  */}
           <div className="col-md-6 " >
             <div className={`${styles.cardCustom} m-4`}>

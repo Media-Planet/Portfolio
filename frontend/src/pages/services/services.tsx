@@ -1,4 +1,4 @@
-// import style from './services.module.css';
+import style from './services.module.css';
 import photo from '../../assets/Images/services/1.png';
 import logo from '../../assets/Images/services/Logo_1.png';
 
@@ -21,7 +21,7 @@ function services() {
                         </button>
                     </section>
                     <section>
-                        <img src={photo} width={300} alt="... coding" />
+                        <img src={photo} width={500} alt="... coding" />
                     </section>
                 </div>
 

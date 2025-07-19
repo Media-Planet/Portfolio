@@ -1,4 +1,4 @@
-import style from './services.module.css';
+// import style from './services.module.css';
 import photo from '../../assets/Images/services/1.png';
 import logo from '../../assets/Images/services/Logo_1.png';
 
@@ -6,10 +6,10 @@ const images = import.meta.glob('/src/assets/images/services/*.{jpg,jpeg,png}', 
 
 const imageArray = Object.values(images).map((mod: any) => mod.default);
 
-function services() {
+function Services() {
     return (
         <>
-            <div className='bg-primary'>
+            <div className='bg-primary container'>
                 <div className='d-flex p-3'>
                     <section>
                         <h2 className='Times_New_RomanF_italic text-black mt-3 mb-4 fs-1'>Web Development</h2>
@@ -79,4 +79,4 @@ function services() {
     )
 }
 
-export default services
+export default Services

@@ -1,7 +1,7 @@
 import Home from "./pages/home/Home"
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer"
-import services from './pages/services/services';
+import Services from './pages/services/services';
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
     <>
       <Navbar/>
         <Home/>
+        <Services/>
       <Footer/>
     </>
   )

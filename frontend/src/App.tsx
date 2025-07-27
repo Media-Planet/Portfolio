@@ -2,9 +2,7 @@ import Services from './pages/services/services';
 
 function App() {
 
-  return (
-    Services()
-  )
+  return <Services />
 }
 
 export default App

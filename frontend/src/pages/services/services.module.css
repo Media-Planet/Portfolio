@@ -3,3 +3,29 @@
     margin: 0;
     padding: 0;
 }
+
+.sec_S {
+    height: 100vh;
+}
+
+.H_S {
+    font-size: 7vw;
+}
+
+.H_S_2 {
+    font-size: 4vw;
+}
+
+.P_S {
+    font-size: 2.7vw;
+}
+
+.P_S_2 {
+    font-size: 2vw;
+}
+
+.img_S {
+    height: auto;
+    width: 100%;
+
+}

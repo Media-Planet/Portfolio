@@ -1,9 +1,9 @@
-import services from './pages/services/services';
+import Services from './pages/services/services';
 
 function App() {
 
   return (
-    services()
+    Services()
   )
 }
 

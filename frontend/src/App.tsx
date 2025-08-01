@@ -1,8 +1,14 @@
-import Services from './pages/services/services';
+import WebDev from "./pages/services/webDevelopment/webDev";
+import BoardG from "./pages/services/boardGames/borderG";
 
 function App() {
 
-  return <Services />
+  return (
+    <>
+      <BoardG />
+      <WebDev />
+    </>
+  )
 }
 
 export default App

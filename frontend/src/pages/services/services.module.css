@@ -3,3 +3,61 @@
     margin: 0;
     padding: 0;
 }
+
+/* -------------General----------- */
+
+/* .sec_S {
+    height: 100vh;
+} */
+
+/* --------------sec1------------- */
+
+.H_S {
+    font-size: 7vw;
+}
+
+.P_S {
+    font-size: 2.7vw;
+}
+
+.img_S {
+    height: auto;
+    width: 100%;
+
+}
+
+/* --------------sec2------------- */
+.Sec2_S_img_S {
+    width: 3.5vw;
+}
+
+.Sec2_H_S {
+    font-size: 6vw;
+}
+
+.Sec2_H_S_2 {
+    font-size: 4vw;
+}
+
+.Sec2_P_S_2 {
+    font-size: 2vw;
+}
+
+
+.Sec2_Ul_S {
+    font-size: 2.3vw;
+}
+
+/* --------------sec3------------- */
+
+.Sec3_P_S {
+    font-size: 2vw;
+}
+
+.Sec3_Ul_S {
+    font-size: 2.4vw;
+}
+
+.Sec3_S_img_S {
+    width: 3vw;
+}

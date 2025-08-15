@@ -7,15 +7,14 @@ const imgs = imgs_fun();
 function WebDev() {
     return (
         <>
-            <div className='px-3 px-sm-4 bg-primary '>
-
+            <div className='px-3 px-sm-4 bg-primary'>
                 <h2 className={`Times_New_RomanF_italic text-black pt-2 ${style['H_S']}`}>Web Development</h2>
                 <div className='row justify-content-between'>
                     <section className='d-grid col-8 col-sm-7 pe-0'>
                         <p className={`align-self-center InterF text-black mb-0 ${style['P_S']} pe-0`}>We craft stunning,
                             responsive websites that combine bold design with smooth functionality—built
                             to impress and perform.</p>
-                        <div className='align-self-center pe-0'>
+                        <div className='align-self-center pe-0 me-sm-5'>
                             <button className={`bg-secondary text-success w-100 rounded-5 border-0 Times_New_RomanF_italic ${style['btn_S']} mt-3 mt-sm-0`}>
                                 <img className={`mx-1 mx-sm-3 mb-sm-2 py-1 ${style['btm_Img_S']}`} src={imgs.logo} alt="Media Planet" />Start Your Journey
                             </button>
@@ -143,15 +142,15 @@ function WebDev() {
                         (<>
                             <section className='row'>
                                 <div className='col-12'>
-                                    <h2 className={`text-center Times_New_RomanF_italic text-black mt-ms-2 mb-ms-5 ${style['H_S4']}`}>Why Choose Us?</h2>
+                                    <h2 className={`text-center Times_New_RomanF_italic text-black mt-sm-2 mb-sm-5 ${style['H_S4']}`}>Why Choose Us?</h2>
                                     <p className={`InterF text-black mb-2 my-sm-5 ${style['P_S4']}`}>We’re not just designers – we are digital storytellers.
                                         We create web experiences that connect people together and help your business stand out,
                                         grow online, and turn visitors into loyal customers.
                                     </p>
                                 </div>
                                 <div className='col-12'>
-                                    <li className='list-unstyled d-flex flex-column gap-ms-4'>
-                                        <ul className={`${style['Sec4_Ul_S']} InterF text-black align-content-center p-0`}>
+                                    <li className='list-unstyled d-flex flex-column gap-sm-4'>
+                                        <ul className={`${style['Sec4_Ul_S']} InterF text-black align-content-center p-0 mt-3 mt-sm-0`}>
                                             <img src={imgs.sec3_S5} className={`${style['Sec4_S_img_S']} mx-2`} alt="..." />Fast Load Times
                                         </ul>
                                         <ul className={`${style['Sec4_Ul_S']} InterF text-black align-content-center p-0`}>
@@ -167,14 +166,14 @@ function WebDev() {
                         (<>
                             <section className='row'>
                                 <div className='col-7'>
-                                    <h2 className={`Times_New_RomanF_italic text-black mt-ms-2 mb-ms-5 ${style['H_S4']}`}>Why Choose Us?</h2>
+                                    <h2 className={`Times_New_RomanF_italic text-black mt-sm-2 mb-sm-5 ${style['H_S4']}`}>Why Choose Us?</h2>
                                     <p className={`InterF text-black my-sm-5 ${style['P_S4']}`}>We’re not just designers – we are digital storytellers.
                                         We create web experiences that connect people together and help your business stand out,
                                         grow online, and turn visitors into loyal customers.
                                     </p>
                                 </div>
                                 <div className='col-5 align-content-center'>
-                                    <li className='list-unstyled d-flex flex-column gap-ms-4'>
+                                    <li className='list-unstyled d-flex flex-column gap-sm-4'>
                                         <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
                                             <img src={imgs.sec3_S5} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />Fast Load Times
                                         </ul>

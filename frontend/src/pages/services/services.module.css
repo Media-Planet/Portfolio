@@ -115,7 +115,7 @@
     }
 
     .Sec2_H_S_2 {
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     .Sec2_P_S_2 {
@@ -161,4 +161,12 @@
     .Sec4_S_img_S {
         width: 5vw;
     }
+
+
+    /* --------------sec2_DM------------- */
+
+    .Sec2_DM_H_S_2 {
+        font-size: 8vw;
+    }
+
 }

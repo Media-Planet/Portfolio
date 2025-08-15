@@ -1,0 +1,71 @@
+* {
+  background-color: #e0dcd5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.accordion-button,
+.collapsed {
+  background-color: #e0dcd5 !important;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 0 !important;
+  font-size: 2.825rem !important;
+  color: black !important;
+  font-style: italic !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: #000000 solid 0.5px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 0 !important;
+}
+
+.accordion-body {
+  border-top: black 0.5px !important;
+  font-family: Inter, sans-serif !important;
+}
+.accordion-item {
+  border: none !important;
+  background-color: #e0dcd5 !important;
+}
+.accordion-body,
+.accordion-button,
+.collapsed .accordion-item {
+  width: 55.98vw !important;
+}
+.accordion-button::after {
+  filter: brightness(0) saturate(100%) !important;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image {
+  max-height: 37.5rem;
+  object-fit: contain;
+}
+.About_Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+@media (max-width: 1060px) {
+  .About_Container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+    gap: 0.5rem;
+  }
+  .image {
+    max-height: 35rem;
+    width: 100%;
+    object-fit: contain;
+  }
+}

@@ -33,13 +33,12 @@ function Home() {
     <>
     
     
-      <div className={` container ${styles.bgMain} align-items-center  justify-content-center align-align-content-center`}>
+      <div className={`   ${styles.container} overflow-hidden align-items-center  justify-content-center align-align-content-center`}>
         {/* Header Section */}
         <div className={`row  align-items-center justify-content-center`}>
-          {/* Text  */}
           <div className="col-md-6 " >
             <div className={`${styles.cardCustom} m-4`}>
-              <h1 className="">Media Planet</h1>
+              <h1 className={`${styles.fontSize}`}>Media Planet</h1>
               <p className="">
                 Where bold ideas collide with <br />
                 storytelling, tech, and design to <br />

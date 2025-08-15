@@ -5,6 +5,7 @@ import servicesOne from "../../assets/image/Our-service-1.png";
 import servicesTwo from "../../assets/image/Our-service-2.png";
 import servicesThree from "../../assets/image/Our-service-3.png";
 import rocket from "../../assets/image/rocket.png";
+
 interface Service {
   title: string;
   image: string;
@@ -31,15 +32,16 @@ function Home() {
 
   return (
     <>
-    
-    
-      <div className={`   ${styles.container} overflow-hidden align-items-center  justify-content-center align-align-content-center`}>
+      <div className={`containerr bg-primary Times_New_RomanF_italic`}>
         {/* Header Section */}
-        <div className={`row  align-items-center justify-content-center`}>
-          <div className="col-md-6 " >
-            <div className={`${styles.cardCustom} m-4`}>
-              <h1 className={`${styles.fontSize}`}>Media Planet</h1>
-              <p className="">
+        <div
+          className={`row  align-items-center justify-content-center align-items-center `}
+        >
+          <div className="col-md-6 ">
+            {/* left */}
+            <div className={`${styles.cardCustom}`}>
+              <h1 className={`${styles.cardH1Font}`}>Media Planet</h1>
+              <p>
                 Where bold ideas collide with <br />
                 storytelling, tech, and design to <br />
                 create immersive campaigns crafted <br />
@@ -56,41 +58,43 @@ function Home() {
               </div>
             </div>
           </div>
+          {/* right */}
           {/* Image  */}
-          <div className="col-md-6 align-items-center ">
-            <img src={TVAline} alt="Alien on TV" className="img-fluid d-block mx-auto"style={{maxHeight: "300px", objectFit: "contain" }} />
+          <div className="col-md-6 d-flex justify-content-end ">
+            <img
+              src={TVAline}
+              alt="Alien on TV"
+              className="img-fluid "
+              style={{ maxHeight: "300px", objectFit: "contain" }}
+            />
           </div>
         </div>
 
         {/* Services Section */}
-        <div className={` py-5 text-center `}>
-          <h2
-            className="mb-4 fs-1 fw-bold "
-            style={{ fontFamily: "Times New Roman", fontStyle: "italic" }}
-          >
-            Our services
-          </h2>
-          <div className={`row justify-content-center `}>
+        <div className={` my-5 text-center align-items-center `}>
+          <h2 className="mb-3 fs-1 fw-bold ">Our services</h2>
+          <div className={`row `}>
             {services.map((service, index) => (
-              <div key={index} className={`col-md-4 mb-4 `}>
+              <div key={index} className={`col-md-4 mb-4`}>
                 <div
-                  className={`p-3 border rounded shadow-sm   ${styles.h300}`}
+                  className={`p-3 shadow-sm ${styles.h300}  d-flex flex-column justify-content-between`}
                 >
                   <img
                     src={service.image}
                     alt={service.alt}
-                    className={`rounded mb-3 img-fluid `}
+                    className={` mb-3 img-fluid`}
                   />
-                  <p className={`fs-5 text-center `}>{service.title}</p>
+                  <p className={`fs-4 mb-0`}>{service.title}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
         {/* form Section */}
         <div className=" py-5">
           <div className="row align-items-center">
-            <h1 className="text-center mb-4 fst-italic">Start now :)</h1>
+            <h1 className="text-center mb-1 ">Start now :)</h1>
             <div className="col-md-6">
               <form>
                 <div className="mb-3">
@@ -136,7 +140,7 @@ function Home() {
 
                 <button
                   type="submit"
-                  className="btn btn-dark w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill"
+                  className="btn fs-4 btn-dark w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill"
                 >
                   <span role="img" aria-label="planet">
                     <img src={logo} width={"40px"} alt="" />

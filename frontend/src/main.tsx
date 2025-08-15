@@ -4,7 +4,9 @@ import { createRoot } from 'react-dom/client'
 
 
 import { BrowserRouter } from 'react-router-dom'
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+library.add(fab);
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './util/Utilities.css'

@@ -1,38 +1,33 @@
-.container {
-    background-color: #eae5dd;
-    font-family: 'Georgia', serif;
-    
-  }
-  .bgMain{
-    background-color: #eae5dd;
+.cardCustom {
+  font-size: 30px;
+}
+.cardH1Font {
+  font-size: 60px;
+  font-weight: bold;
+  color: #0f0f0f;
+  margin-top: 0.5rem;
+}
 
-  }
-  
-  .cardCustom {
-    border: none;
-    padding: 2rem;
-    
-  }
-  
-  .btnCustom {
-    background-color: #0f0f0f;
-    color: #fff;
-    border-radius: 1rem;
-    padding: 0.8rem 1rem;
-    font-style: italic;
-    font-size: 1.1rem;
-    margin-right: 1rem;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .btnCustom:hover {
-    background-color: #2c2c2c;
-  }
-  
-.vh100{
+
+.btnCustom  {
+  background-color: #0f0f0f;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.btnCustom:hover {
+  background-color: #2c2c2c;
+}
+
+.vh100 {
   height: 100vh !important;
 }
-.h300{
+.h300 {
   height: 100% !important;
 }

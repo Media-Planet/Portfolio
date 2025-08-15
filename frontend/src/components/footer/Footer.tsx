@@ -1,8 +1,8 @@
-
-
+import { faFacebook, faYoutube, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Footer() {
   return (
-    <footer className="bg-dark text-light pt-5 pb-3 mt-5">
+    <footer className="bg-dark text-light pt-5 pb-3">
     <div className="container">
       <div className="row">
         {/* Services */}
@@ -25,15 +25,22 @@ function Footer() {
         {/* Social Icons */}
         <div className="col-md-4 mb-4">
           <h6 className="fst-italic">Contact with us</h6>
-          <div className="mt-2">
-            <a href="#" className="text-light me-3"><i className="bi bi-facebook"></i></a>
-            <a href="#" className="text-light me-3"><i className="bi bi-youtube"></i></a>
-            <a href="#" className="text-light me-3"><i className="bi bi-linkedin"></i></a>
-            <a href="#" className="text-light"><i className="bi bi-instagram"></i></a>
+          <div className="mt-2 fs-3">
+            <a href="#" className="text-light me-3">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="#" className="text-light me-3">
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+            <a href="#" className="text-light me-3">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="#" className="text-light">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
           </div>
         </div>
-      </div>
-
+        </div>
       <hr className="border-secondary" />
 
       <div className="row">

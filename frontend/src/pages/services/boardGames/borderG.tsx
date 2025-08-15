@@ -8,7 +8,7 @@ const imgs = imgs_fun();
 function BoardG() {
     return (
         <>
-            <div className='px-4 bg-primary '>
+            <div className=' bg-primary containerr '>
                 <section className={`${style['sec_S']} pt-3`}>
                     <div className='row'>
                         <section className='row col-7'>

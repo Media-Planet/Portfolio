@@ -4,16 +4,18 @@ import DigitalMarketing from "./pages/services/digitalMarketing/digitalMarketing
 import Home from "./pages/home/Home"
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer"
+import About from "./pages/about/About";
 
 function App() {
 
   return (
     <>
       {/* <Navbar /> */}
-      <WebDev />
+      {/* <WebDev />
       <BoardG />
-      <DigitalMarketing />
+      <DigitalMarketing /> */}
       {/* <Home /> */}
+      <About/>
       {/* <Footer /> */}
     </>
   )

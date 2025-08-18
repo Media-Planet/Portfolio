@@ -1,9 +1,4 @@
-* {
-  background-color: #e0dcd5;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .accordion-button,
 .collapsed {
   background-color: #e0dcd5 !important;

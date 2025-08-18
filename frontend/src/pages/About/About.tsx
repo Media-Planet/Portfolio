@@ -1,5 +1,6 @@
 import React from "react";
-import style from "./About.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function About() {
   return (
@@ -8,7 +9,8 @@ function About() {
         title_1="Vision"
         title_2="Mission"
         title_3="Values"
-        body_1="To be one of the most creative, innovative marketing agencies and shift the marketing industry into an entertainment one."
+        title_4="Values"
+        body_1="To be one of the most creative, innovative marketing agencies and shift the marketing industry into an entertainment one. "
         body_2="To blend creativity and innovation to transform traditional marketing into captivating entertainment experiences."
         list_1="We prioritize originality and imagination in every campaign to deliver unforgettable experiences."
         list_2="We embrace cutting-edge technology and forward-thinking strategies to revolutionize the marketing industry."
@@ -20,17 +22,16 @@ function About() {
     </>
   );
 }
-
+// this is the accordion component that will be used in the About page
 const Drop: React.FC<DropProps> = (props) => {
   return (
-    <div className={`${style.About_Container} bg-primary`}>
-      <div className={style.accordionWrapper}>
-        <div>
-          {/* Vision */}
-          <div className={style.accordionItem}>
-            <h2>
+    <div className="About_Container">
+      <div className="align-self-center">
+        <div className="accordion" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingOne">
               <button
-                className={style.accordionButton}
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -40,16 +41,19 @@ const Drop: React.FC<DropProps> = (props) => {
                 {props.title_1}
               </button>
             </h2>
-            <div id="collapseOne" className="collapse">
-              <div className={style.accordionBody}>{props.body_1}</div>
+            <div
+              id="collapseOne"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div className="accordion-body">{props.body_1}</div>
             </div>
           </div>
-
-          {/* Mission */}
-          <div className={style.accordionItem}>
-            <h2>
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingTwo">
               <button
-                className={style.accordionButton}
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -59,16 +63,19 @@ const Drop: React.FC<DropProps> = (props) => {
                 {props.title_2}
               </button>
             </h2>
-            <div id="collapseTwo" className="collapse">
-              <div className={style.accordionBody}>{props.body_2}</div>
+            <div
+              id="collapseTwo"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div className="accordion-body">{props.body_2}</div>
             </div>
           </div>
-
-          {/* Values */}
-          <div className={style.accordionItem}>
-            <h2>
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingThree">
               <button
-                className={style.accordionButton}
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -78,9 +85,14 @@ const Drop: React.FC<DropProps> = (props) => {
                 {props.title_3}
               </button>
             </h2>
-            <div id="collapseThree" className="collapse">
-              <div className={style.accordionBody}>
-                <ul className={style.list}>
+            <div
+              id="collapseThree"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div className="accordion-body">
+                <ul className="list">
                   <li>{props.list_1}</li>
                   <li>{props.list_2}</li>
                   <li>{props.list_3}</li>
@@ -93,20 +105,17 @@ const Drop: React.FC<DropProps> = (props) => {
           </div>
         </div>
       </div>
-
-      {/* Image */}
-      <div>
+      <div className="image-container align-self-center">
         <img
-          src="src/assets/ChatGPT Image Jul 12, 2025, 07_57_26 PM 1.png"
-          className={style.image}
+          src="src\assets\ChatGPT Image Jul 12, 2025, 07_57_26 PM 1.png"
+          className="image"
         />
       </div>
     </div>
   );
 };
-
 export default About;
-
+// Define the type for the props of the Drop component
 type DropProps = {
   title_1: string;
   title_2: string;

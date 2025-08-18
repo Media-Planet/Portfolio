@@ -4,7 +4,7 @@ import logo from "../../assets/image/Logo.png";
 import servicesOne from "../../assets/image/Our-service-1.png";
 import servicesTwo from "../../assets/image/Our-service-2.png";
 import servicesThree from "../../assets/image/Our-service-3.png";
-import rocket from "../../assets/image/rocket.png";
+
 
 interface Service {
   title: string;

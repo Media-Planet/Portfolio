@@ -4,6 +4,7 @@ import logo from "../../assets/image/Logo.png";
 import servicesOne from "../../assets/image/Our-service-1.png";
 import servicesTwo from "../../assets/image/Our-service-2.png";
 import servicesThree from "../../assets/image/Our-service-3.png";
+import rocket from "../../assets/image/rocket.png";
 
 interface Service {
   title: string;
@@ -149,14 +150,14 @@ function Home() {
               </form>
             </div>
 
-            {/* <div className="col-md-6 text-center mt-4 mt-md-0">
+            <div className="col-md-6 text-center mt-4 mt-md-0">
               <img
                 src={rocket}
                 alt="Rocket"
                 className="img-fluid"
                 style={{ width: "300px", transform: "rotate(15deg)" }}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

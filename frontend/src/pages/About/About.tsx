@@ -8,6 +8,7 @@ function About() {
       <Drop
         title_1="Vision"
         title_2="Mission"
+        title_3="Values"
         title_4="Values"
         body_1="To be one of the most creative, innovative marketing agencies and shift the marketing industry into an entertainment one. "
         body_2="To blend creativity and innovation to transform traditional marketing into captivating entertainment experiences."

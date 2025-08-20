@@ -48,7 +48,7 @@ function Home() {
                 to stand out, speak loud, and leave a mark.
               </p>
               <div className="mt-4">
-                <a href="#" className={`${styles.btnCustom}`}>
+                <a href="#form"  className={`${styles.btnCustom}`}>
                   <img src={logo} width={"30px"} alt="logo" /> Start Your
                   Journey
                 </a>
@@ -92,7 +92,7 @@ function Home() {
         </div>
 
         {/* form Section */}
-        <div className=" py-5">
+        <div className=" py-5" id="form">
           <div className="row align-items-center">
             <h1 className="text-center mb-1 ">Start now :)</h1>
             <div className="col-md-6">
@@ -102,6 +102,7 @@ function Home() {
                     type="text"
                     className="form-control border-black bg-transparent"
                     placeholder="Enter your name"
+                  
                   />
                 </div>
 

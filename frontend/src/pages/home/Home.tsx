@@ -1,5 +1,5 @@
 import styles from "./Home.module.css";
-import TVAline from "../../assets/image/TV-photo.png";
+import TVAline from "../../assets/image/img_header.png";
 import logo from "../../assets/image/Logo.png";
 import servicesOne from "../../assets/image/Our-service-1.png";
 import servicesTwo from "../../assets/image/Our-service-2.png";

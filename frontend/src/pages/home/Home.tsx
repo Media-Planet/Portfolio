@@ -4,6 +4,7 @@ import logo from "../../assets/image/Logo.png";
 import servicesOne from "../../assets/image/Our-service-1.png";
 import servicesTwo from "../../assets/image/Our-service-2.png";
 import servicesThree from "../../assets/image/Our-service-3.png";
+import rocket from "../../assets/image/rocket.png";
 
 interface Service {
   title: string;
@@ -47,7 +48,7 @@ function Home() {
                 to stand out, speak loud, and leave a mark.
               </p>
               <div className="mt-4">
-                <a href="#" className={`${styles.btnCustom}`}>
+                <a href="#form"  className={`${styles.btnCustom}`}>
                   <img src={logo} width={"30px"} alt="logo" /> Start Your
                   Journey
                 </a>
@@ -91,7 +92,7 @@ function Home() {
         </div>
 
         {/* form Section */}
-        <div className=" py-5">
+        <div className=" py-5" id="form">
           <div className="row align-items-center">
             <h1 className="text-center mb-1 ">Start now :)</h1>
             <div className="col-md-6">
@@ -101,6 +102,7 @@ function Home() {
                     type="text"
                     className="form-control border-black bg-transparent"
                     placeholder="Enter your name"
+                  
                   />
                 </div>
 
@@ -149,14 +151,14 @@ function Home() {
               </form>
             </div>
 
-            {/* <div className="col-md-6 text-center mt-4 mt-md-0">
+            <div className="col-md-6 text-center mt-4 mt-md-0">
               <img
                 src={rocket}
                 alt="Rocket"
                 className="img-fluid"
                 style={{ width: "300px", transform: "rotate(15deg)" }}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

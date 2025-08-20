@@ -4,19 +4,22 @@ import DigitalMarketing from "./pages/services/digitalMarketing/digitalMarketing
 import Home from "./pages/home/Home"
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer"
-import About from "./pages/about/About";
+import About from "./pages/About/About";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
 
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <WebDev />
-      <BoardG />
-      <DigitalMarketing /> */}
-      {/* <Home /> */}
-      <About/>
-      {/* <Footer /> */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/web-development" element={<WebDev />} />
+        <Route path="/board-games" element={<BoardG />} />
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
     </>
   )
 }

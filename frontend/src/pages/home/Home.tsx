@@ -39,7 +39,7 @@ function Home() {
         >
           <div className="col-md-6 ">
             {/* left */}
-            <div className={`${styles.cardCustom}`}>
+            <div  className={`${styles.cardCustom}`}>
               <h1 className={`${styles.cardH1Font}`}>Media Planet</h1>
               <p>
                 Where bold ideas collide with <br />
@@ -65,7 +65,7 @@ function Home() {
               src={TVAline}
               alt="Alien on TV"
               className="img-fluid "
-              style={{ maxHeight: "300px", objectFit: "contain" }}
+              style={{ maxHeight: "400px", objectFit: "contain" }}
             />
           </div>
         </div>

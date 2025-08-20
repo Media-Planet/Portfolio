@@ -1,172 +1,27 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+.cardCustom {
+    font-size: 30px;
+  }
 
-/* -------------General----------- */
+  .cardH1Font {
+    font-size: 60px;
+    font-weight: bold;
+    color: #0f0f0f;
+    margin-top: 0.5rem;
+  }
 
-/* --------------sec1------------- */
-
-.H_S {
-    font-size: 8vw;
-}
-
-.P_S {
-    font-size: 2.7vw;
-}
-
-.img_S {
-    height: auto;
-    width: 100%;
-
-}
-
-.btn_S {
-    font-size: 4vw;
-}
-
-.btm_Img_S {
-    width: 6vw;
-}
-
-/* --------------sec2------------- */
-.Sec2_S_img_S {
-    width: 3.5vw;
-}
-
-.Sec2_H_S {
-    font-size: 6vw;
-}
-
-.Sec2_H_S_2 {
-    font-size: 4vw;
-}
-
-.Sec2_P_S_2 {
-    font-size: 2vw;
-}
-
-.Sec2_Ul_S {
-    font-size: 2.3vw;
-}
-
-/* --------------sec3------------- */
-.H_S3 {
-    font-size: 8vw;
-}
-
-.Sec3_P_S {
-    font-size: 2vw;
-}
-
-.Sec3_Ul_S {
-    font-size: 2.4vw;
-}
-
-.Sec3_S_img_S {
-    width: 3vw;
-}
-
-/* --------------sec4------------- */
-.H_S4 {
-    font-size: 7vw;
-}
-
-.P_S4 {
-    font-size: 2.7vw;
-}
-
-.Sec4_Ul_S {
-    font-size: 2.4vw;
-}
-
-.Sec4_S_img_S {
-    width: 3vw;
-}
-
-
-@media (max-width: 576px) {
-
-    /* --------------sec1------------- */
-    .H_S {
-        font-size: 10vw;
-    }
-
-    .P_S {
-        font-size: 4.5vw;
-    }
-
-    .btn_S {
-        font-size: 4.4vw;
-    }
-
-    .btm_Img_S {
-        width: 8vw;
-    }
-
-    /* --------------sec2------------- */
-    .Sec2_S_img_S {
-        width: 8vw;
-    }
-
-    .Sec2_H_S {
-        font-size: 10vw;
-    }
-
-    .Sec2_H_S_2 {
-        font-size: 8vw;
-    }
-
-    .Sec2_P_S_2 {
-        font-size: 6vw;
-    }
-
-
-    .Sec2_Ul_S {
-        font-size: 4.5vw;
-    }
-
-    /* --------------sec3------------- */
-    .H_S3 {
-        font-size: 11vw;
-        text-align: center;
-    }
-
-    .Sec3_P_S {
-        font-size: 4.5vw;
-    }
-
-    .Sec3_Ul_S {
-        font-size: 2.4vw;
-    }
-
-    .Sec3_S_img_S {
-        width: 3vw;
-    }
-
-    /* --------------sec4------------- */
-    .H_S4 {
-        font-size: 11vw;
-    }
-
-    .P_S4 {
-        font-size: 4.5vw;
-    }
-
-    .Sec4_Ul_S {
-        font-size: 5vw;
-    }
-
-    .Sec4_S_img_S {
-        width: 5vw;
-    }
-
-
-    /* --------------sec2_DM------------- */
-
-    .Sec2_DM_H_S_2 {
-        font-size: 8vw;
-    }
-
-}
+  
+.btnCustom  {
+    background-color: #0f0f0f;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .h300 {
+    height: 100% !important;
+  }
+  

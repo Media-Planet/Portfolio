@@ -30,16 +30,16 @@ function Navbar() {
             </li>
           </ul>
 
-          {/* Right - Home, Servers, Gallery */}
+          {/* Right - Home, Services, Gallery */}
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link text-light" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="web-development">Servers</a>
+              <a className="nav-link text-light" href="web-development">Services</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="about">about</a>
+              <a className="nav-link text-light" href="about">About</a>
             </li>
           </ul>
         </div>

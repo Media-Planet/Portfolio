@@ -143,7 +143,7 @@ function WebDev() {
                     className={` mb-3 img-fluid`}
                     style={{ maxHeight: "550px", objectFit: "contain" }}
                   />
-                  <p className={`fs-4 mb-0`}>{Approach.title}</p>
+                  <p className={`fs-3 mb-0`}>{Approach.title}</p>
                 </div>
               </div>
             ))}

@@ -1,9 +1,10 @@
 import styles from "./Home.module.css";
-import TVAline from "../../assets/image/TV-photo.png";
+import TVAline from "../../assets/image/img_header.png";
 import logo from "../../assets/image/Logo.png";
 import servicesOne from "../../assets/image/Our-service-1.png";
 import servicesTwo from "../../assets/image/Our-service-2.png";
 import servicesThree from "../../assets/image/Our-service-3.png";
+import rocket from "../../assets/image/rocket.png";
 
 interface Service {
   title: string;
@@ -40,18 +41,24 @@ function Home() {
             {/* left */}
             <div className={`${styles.cardCustom}`}>
               <h1 className={`${styles.cardH1Font}`}>Media Planet</h1>
-              <p>
-                Where bold ideas collide with <br />
-                storytelling, tech, and design to <br />
-                create immersive campaigns crafted <br />
-                to stand out, speak loud, and leave a mark.
+              <p className={` ${styles.paragraph}`}>
+                Where bold ideas collide with storytelling, tech, and design to
+                create immersive campaigns crafted to stand out, speak loud, and
+                leave a mark.
               </p>
               <div className="mt-4">
-                <a href="#" className={`${styles.btnCustom}`}>
-                  <img src={logo} width={"30px"} alt="logo" /> Start Your
-                  Journey
+                <a href="#form" className={`${styles.btnCustom}`}>
+                  <img
+                    src={logo}
+                    className={`${styles.buttonLogo}`}
+                    alt="logo"
+                  />{" "}
+                  Start Your Journey
                 </a>
-                <a href="#" className={`mt-4  ${styles.btnCustom}`}>
+                <a
+                  href="#"
+                  className={`mt-4  ${styles.btnCustom} ${styles.btnGallery}`}
+                >
                   Gallery
                 </a>
               </div>
@@ -63,8 +70,8 @@ function Home() {
             <img
               src={TVAline}
               alt="Alien on TV"
-              className="img-fluid "
-              style={{ maxHeight: "300px", objectFit: "contain" }}
+              className={"img-fluid"}
+              style={{ maxHeight: "200vw", objectFit: "contain" }}
             />
           </div>
         </div>
@@ -91,7 +98,7 @@ function Home() {
         </div>
 
         {/* form Section */}
-        <div className=" py-5">
+        <div className=" py-5" id="form">
           <div className="row align-items-center">
             <h1 className="text-center mb-1 ">Start now :)</h1>
             <div className="col-md-6">
@@ -149,14 +156,14 @@ function Home() {
               </form>
             </div>
 
-            {/* <div className="col-md-6 text-center mt-4 mt-md-0">
+            <div className="col-md-6 text-center mt-4 mt-md-0">
               <img
                 src={rocket}
                 alt="Rocket"
                 className="img-fluid"
                 style={{ width: "300px", transform: "rotate(15deg)" }}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

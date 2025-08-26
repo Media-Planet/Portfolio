@@ -13,7 +13,7 @@ function About() {
         body_2="To blend creativity and innovation to transform traditional marketing into captivating entertainment experiences."
         list_1="We prioritize originality and imagination in every campaign to deliver unforgettable experiences."
         list_2="We embrace cutting-edge technology and forward-thinking strategies to revolutionize the marketing industry."
-        list_3="Our clients’ success is our priority, and we tailor solutions to meet their unique needs and aspirations."
+        list_3="Our clients success is our priority, and we tailor solutions to meet their unique needs and aspirations."
         list_4="We are committed to delivering excellence in every project, ensuring outstanding results."
         list_5="We uphold honesty and transparency in our dealings, building trust with clients and partners."
         list_6="We celebrate diversity and create campaigns that resonate with audiences of all backgrounds."

@@ -32,22 +32,31 @@ function Home() {
 
   return (
     <>
-      <div className={`containerr bg-primary Times_New_RomanF_italic `}>
+      <div className={`containerr bg-primary Times_New_RomanF_italic $ `}>
         {/* Header Section */}
         <div
           className={`row  align-items-center justify-content-center align-items-center `}
         >
-          <div className="col-md-6 ">
+          <div className={`col-md-6 ${styles.textContainer} `}>
             {/* left */}
             <div className={`${styles.cardCustom}`}>
-              <h1 className={`${styles.cardH1Font} ${styles.glitch}`}>
+              <h1
+                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1}`}
+              >
                 Media Planet
               </h1>
-              <p className={` ${styles.paragraph}`}>
-                Where bold ideas collide with storytelling, tech, and design to
-                create immersive campaigns crafted to stand out, speak loud, and
-                leave a mark.
-              </p>
+              <div className={`${styles.textBox} `}>
+                <p className={` ${styles.paragraph}`}>
+                  Where bold ideas collide with storytelling, tech, and design
+                  to create immersive campaigns crafted to stand out, speak
+                  loud, and leave a mark.
+                </p>
+                <img
+                  src="src\assets\image\halfMoon.png"
+                  className={`${styles.halfMoon}`}
+                  alt="half moon"
+                />
+              </div>
               <div className="mt-4">
                 <a href="#form" className={`${styles.btnCustom}`}>
                   <img
@@ -68,11 +77,11 @@ function Home() {
           </div>
           {/* right */}
           {/* Image  */}
-          <div className="col-md-6 d-flex justify-content-end ">
+          <div className="col-md-6 d-flex justify-content-end  ">
             <img
               src={TVAline}
               alt="Alien on TV"
-              className={`img-fluid ${styles.bounce}`}
+              className={`img-fluid ${styles.bounce} ${styles.imageTV}`}
               style={{ maxHeight: "200vw", objectFit: "contain" }}
             />
           </div>
@@ -85,18 +94,21 @@ function Home() {
           >
             Our services
           </h2>
-          <div className={`row `}>
+          <div className={`row ${styles.services} `}>
             {services.map((service, index) => (
-              <div key={index} className={`col-md-4 mb-4`}>
+              <div
+                key={index}
+                className={`col-md-4 mb-4 ${styles.serviceCard}`}
+              >
                 <div
                   className={`p-3 ${styles.h300} d-flex flex-column justify-content-between `}
                 >
                   <img
                     src={service.image}
                     alt={service.alt}
-                    className={` mb-3 img-fluid b-1 `}
+                    className={` mb-3 img-fluid b-1 ${styles.serviceImage}`}
                   />
-                  <p className={`fs-4 mb-0 ${styles.title}`}>{service.title}</p>
+                  <p className={` mb-0 ${styles.title}`}>{service.title}</p>
                 </div>
               </div>
             ))}
@@ -111,7 +123,7 @@ function Home() {
             >
               Start now :)
             </h1>
-            <div className="col-md-6">
+            <div className={`col-md-6 ${styles.formRes} mt-4 mt-md-0`}>
               <form>
                 <div className="mb-3">
                   <input
@@ -156,7 +168,7 @@ function Home() {
 
                 <button
                   type="submit"
-                  className={`btn fs-4 btn-dark w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill ${styles.btnCustom} ${styles.submit}`}
+                  className={`btn fs-4 btn-dark w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill  ${styles.submit}`}
                 >
                   <span role="img" aria-label="planet">
                     <img src={logo} width={"40px"} alt="" />
@@ -170,7 +182,7 @@ function Home() {
               <img
                 src={rocket}
                 alt="Rocket"
-                className={`img-fluid ${styles.shake}`}
+                className={`img-fluid ${styles.shake} ${styles.rocket}`}
                 style={{ width: "30vw" }}
               />
             </div>

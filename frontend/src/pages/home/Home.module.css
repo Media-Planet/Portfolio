@@ -39,7 +39,7 @@ body::before {
 .cardCustom {
   display: flex;
   flex-direction: column;
-  gap: 5vw;
+  gap: 4vw;
 }
 .cardH1Font {
   font-size: 5vw !important;
@@ -93,7 +93,7 @@ body::before {
 }
 .margin {
   margin-bottom: 5vw;
-  margin-top: 12vw;
+  margin-top: 5vw;
 }
 .title {
   font-family: "inter", sans-serif;
@@ -105,7 +105,7 @@ body::before {
 }
 .title_3 {
   text-align: center;
-  margin-top: 6vw !important;
+  margin-top: 2vw !important;
 }
 .form {
   border: 4px solid rgba(56, 56, 56, 0.39) !important;
@@ -360,9 +360,10 @@ body::before {
   .halfMoon {
     display: inline;
     position: relative;
-    right: -10vw;
+    right: -8vw;
     top: -8vw;
     width: 158vw;
+    overflow: hidden;
   }
   .buttonLogo {
     width: 7vw;

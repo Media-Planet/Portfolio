@@ -309,7 +309,7 @@ body::before {
   }
 }
 /* this is the media */
-@media (max-width: 1314px) {
+@media (max-width: 1100px) {
   .cardH1Font {
     font-size: 8vw !important;
     text-align: center;

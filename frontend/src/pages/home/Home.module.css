@@ -3,6 +3,7 @@ body {
   background: #000; /* or your page background */
   position: relative;
   min-height: 100vw;
+  overflow-x: hidden;
 }
 
 /* TV scanline overlay */
@@ -360,10 +361,9 @@ body::before {
   .halfMoon {
     display: inline;
     position: relative;
-    right: -7.95vw;
-    top: -8vw;
+    right: -8vw;
+    top: -4vw;
     width: 158vw;
-    overflow: hidden;
   }
   .buttonLogo {
     width: 7vw;

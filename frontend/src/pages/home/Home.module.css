@@ -361,7 +361,7 @@ body::before {
   .halfMoon {
     display: inline;
     position: relative;
-    right: -8vw;
+    right: -9vw;
     top: -4vw;
     width: 158vw;
   }

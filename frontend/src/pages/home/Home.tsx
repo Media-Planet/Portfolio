@@ -57,7 +57,7 @@ function Home() {
                   alt="half moon"
                 />
               </div>
-              <div className="mt-4">
+              <div className=" mt-4">
                 <a href="#form" className={`${styles.btnCustom}`}>
                   <img
                     src={logo}

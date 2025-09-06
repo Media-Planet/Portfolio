@@ -64,7 +64,7 @@ body::before {
   border-radius: 1.5vw;
   padding: 0.6vw 1vw;
   margin-right: 1vw;
-  width: 31vw;
+  width: 30vw;
   text-decoration: none;
   display: inline-block;
   font-size: 2.7vw;
@@ -88,6 +88,7 @@ body::before {
 }
 .btnGallery {
   width: 10vw;
+  margin: 0;
 }
 .halfMoon {
   display: none;
@@ -404,6 +405,15 @@ body::before {
   }
 }
 @media (max-width: 400px) {
+  .btnCustom {
+    font-size: 4.5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-radius: 4vw;
+  }
+  .buttonLogo {
+    width: 10vw;
+  }
   .serviceCard {
     width: 100vw !important;
   }
@@ -418,5 +428,43 @@ body::before {
   }
   .form::placeholder {
     font-size: 2.9vw !important;
+  }
+}
+@media (max-width: 350px) {
+  .cardH1Font {
+    font-size: 9vw !important;
+  }
+  .paragraph {
+    font-size: 4vw;
+  }
+  .form::placeholder {
+    font-size: 2.8vw !important;
+  }
+  .form {
+    font-size: 3.5vw !important;
+    width: 110% !important;
+    height: 40px !important;
+  }
+  .form_2 {
+    height: 80px !important;
+  }
+  .submit {
+    font-size: 4vw !important;
+    height: 12vw !important;
+    width: 100% !important;
+  }
+  .btnCustom {
+    font-size: 4.8vw;
+    padding: 2.5vw 1vw 2vw !important;
+    width: 100%;
+  }
+  .submit {
+    padding-right: 28vw !important;
+    padding-left: 28vw !important;
+  }
+}
+@media (max-width: 398px) {
+  .form::placeholder {
+    font-size: 3.5vw !important;
   }
 }

@@ -13,8 +13,8 @@ function App() {
       {/* <WebDev /> */}
       {/* <BoardG /> */}
       {/* <DigitalMarketing /> */}
-      <Home />
-      {/* <About /> */}
+      {/* <Home /> */}
+      <About />
       <Footer />
     </>
   );

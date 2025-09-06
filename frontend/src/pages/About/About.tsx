@@ -1,6 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import styles from ".//About.module.css";
+import AboutImage from "../../assets/image/About.png";
 
 function About() {
   return (
@@ -24,15 +26,15 @@ function About() {
 // this is the accordion component that will be used in the About page
 const Drop: React.FC<DropProps> = (props) => {
   return (
-    <div className="About_Container">
-      <div className="align-self-center">
-        <div className="accordion" id="accordionExample">
-          <div className="accordion-item">
+    <div>
+      <div className="align-self-center About_Container">
+        <div className={`accordion ${styles.accordion}`} id="accordionExample">
+          <div className={`accordion-item ${styles.accordion_item}`}>
             <h2 className="accordion-header" id="headingOne">
               <button
-                className="accordion-button collapsed"
+                className={`accordion-button collapsed ${styles.accordion_button} ${styles.collapsed} `}
                 type="button"
-                data-bs-toggle="collapse"
+                data-bs-toggle={`collapse`}
                 data-bs-target="#collapseOne"
                 aria-expanded="false"
                 aria-controls="collapseOne"
@@ -46,13 +48,15 @@ const Drop: React.FC<DropProps> = (props) => {
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">{props.body_1}</div>
+              <div className={`accordion-body ${styles.accordion_body}`}>
+                {props.body_1}
+              </div>
             </div>
           </div>
-          <div className="accordion-item">
+          <div className={`accordion-item ${styles.accordion_item}`}>
             <h2 className="accordion-header" id="headingTwo">
               <button
-                className="accordion-button collapsed"
+                className={`accordion-button collapsed ${styles.accordion_button} ${styles.collapsed} `}
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -68,13 +72,15 @@ const Drop: React.FC<DropProps> = (props) => {
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">{props.body_2}</div>
+              <div className={`accordion-body ${styles.accordion_body}`}>
+                {props.body_2}
+              </div>
             </div>
           </div>
-          <div className="accordion-item">
+          <div className={`accordion-item ${styles.accordion_item}`}>
             <h2 className="accordion-header" id="headingThree">
               <button
-                className="accordion-button collapsed"
+                className={`accordion-button collapsed ${styles.accordion_button} ${styles.collapsed} `}
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -90,8 +96,8 @@ const Drop: React.FC<DropProps> = (props) => {
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
-                <ul className="list">
+              <div className={`accordion-body  ${styles.accordion_body}`}>
+                <ul className={`${styles.list}`}>
                   <li>{props.list_1}</li>
                   <li>{props.list_2}</li>
                   <li>{props.list_3}</li>
@@ -103,12 +109,9 @@ const Drop: React.FC<DropProps> = (props) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="image-container align-self-center">
-        <img
-          src="src\assets\ChatGPT Image Jul 12, 2025, 07_57_26 PM 1.png"
-          className="image"
-        />
+        <div className="image-container align-self-center">
+          <img src={AboutImage} className={`${styles.image}`} alt="About" />
+        </div>
       </div>
     </div>
   );

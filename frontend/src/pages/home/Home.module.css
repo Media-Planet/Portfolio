@@ -2,7 +2,7 @@ body {
   margin: 0;
   background: #000; /* or your page background */
   position: relative;
-  min-height: 100vw;
+
   overflow-x: hidden;
 }
 

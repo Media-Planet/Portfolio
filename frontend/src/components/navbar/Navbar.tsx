@@ -3,7 +3,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-black">
       <div className="container-fluid">
         {/* Logo - Left */}
-        <a className="navbar-brand text-light" href="#">Media Planet</a>
+        <a className="navbar-brand text-light" href="/">Media Planet</a>
 
         {/* Toggle for mobile */}
         <button
@@ -33,13 +33,13 @@ function Navbar() {
           {/* Right - Home, Servers, Gallery */}
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link text-light" href="#">Home</a>
+              <a className="nav-link text-light" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="#">Servers</a>
+              <a className="nav-link text-light" href="web-development">Servers</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="#">Gallery</a>
+              <a className="nav-link text-light" href="about">about</a>
             </li>
           </ul>
         </div>

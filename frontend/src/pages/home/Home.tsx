@@ -117,7 +117,6 @@ function Home() {
 
         {/* form Section */}
         <div className=" py-5" id="form">
-        <div className=" py-5" id="form">
           <div className="row align-items-center">
             <h1
               className={`${styles.cardH1Font} ${styles.title_3} ${styles.glitch}`}
@@ -180,14 +179,12 @@ function Home() {
             </div>
 
             <div className="col-md-6 text-center mt-4 mt-md-0">
-            <div className="col-md-6 text-center mt-4 mt-md-0">
               <img
                 src={rocket}
                 alt="Rocket"
                 className={`img-fluid ${styles.shake} ${styles.rocket}`}
                 style={{ width: "30vw" }}
               />
-            </div>
             </div>
           </div>
         </div>

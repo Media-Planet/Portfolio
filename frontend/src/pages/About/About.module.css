@@ -1,3 +1,7 @@
+body {
+  background: #e0dcd5 !important;
+}
+
 .accordion_button,
 .collapsed {
   font-family: "Times New Roman", Times, serif;
@@ -11,6 +15,7 @@
   justify-content: center !important;
   align-items: center !important;
   border-radius: 0 !important;
+  background-color: #e0dcd5 !important;
 }
 .accordion {
   display: flex !important;
@@ -21,6 +26,7 @@
 .accordion_body {
   border-top: black 0.5px !important;
   font-family: Inter, sans-serif !important;
+  background-color: #e0dcd5;
 }
 .accordion_item {
   border: none !important;
@@ -39,13 +45,13 @@
   gap: 1rem !important;
 }
 .accordion_button:focus {
-  background: none !important;
+  background-color: #e0dcd5 !important;
 }
 :global(.accordion-button:not(.collapsed)) {
-  background: none !important;
+  background-color: #e0dcd5 !important;
 }
 .image {
-  max-height: 37.5rem !important;
+  max-height: 40vw !important;
   object-fit: contain !important;
 }
 :global(.About_Container) {
@@ -68,7 +74,7 @@
     gap: 0.5rem !important;
   }
   .image {
-    max-height: 35rem !important;
+    max-height: 50vw !important;
     width: 100% !important;
     object-fit: contain !important;
   }
@@ -100,259 +106,17 @@
     font-size: 11vw !important;
   }
 }
-
-:global(.ants) {
-  fill: black;
-  width: 15px;
-  height: 25px;
-  position: absolute;
-  z-index: 2;
-  /* Make sure ants are positioned relative to About_Container */
-}
-
-:global(.About_Container) {
-  position: relative !important;
-  /* Ensures absolutely positioned ants are contained */
-}
-
-:global(#ant1) {
-  left: 50%;
-  bottom: 0%;
-  animation: ant-1-animation 50s infinite;
-}
-
-:global(#ant2) {
-  left: 0;
-  bottom: 0%;
-  animation: ant-2-animation 50s infinite;
-}
-
-:global(#ant3) {
-  left: 100%;
-  bottom: 0%;
-  animation: ant-3-animation 50s infinite;
-  animation-delay: 1s;
-}
-
-/* Keyframes adjusted to keep ants within the About_Container area */
-@keyframes ant-1-animation {
-  0% {
-    left: 50%;
-    bottom: 0%;
-  }
-  10% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(0deg);
-  }
-  12% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(-90deg);
-  }
-  18% {
-    transform: rotate(-90deg);
-  }
-  20% {
-    left: 10%;
-    bottom: 10%;
-    transform: rotate(-90deg);
-  }
-  22% {
-    transform: rotate(0);
-  }
-  32% {
-    transform: rotate(0);
-  }
-  38% {
-    left: 10%;
-    bottom: 80%;
-    transform: rotate(90deg);
-  }
-  50% {
-    left: 90%;
-    bottom: 80%;
-    transform: rotate(90deg);
-  }
-  55% {
-    left: 90%;
-    bottom: 80%;
-    transform: rotate(230deg);
-  }
-  72% {
-    left: 10%;
-    bottom: 10%;
-    transform: rotate(230deg);
-  }
-  78% {
-    left: 10%;
-    bottom: 10%;
-    transform: rotate(90deg);
-  }
-  85% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(90deg);
-  }
-  90% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(180deg);
-  }
-  100% {
-    left: 50%;
-    bottom: 0%;
-    transform: rotate(180deg);
+@media (max-width: 650px) {
+  .image {
+    max-height: 85vw !important;
   }
 }
-
-@keyframes ant-2-animation {
-  0% {
-    left: 0;
-    bottom: 0%;
-    transform: rotate(45deg);
+@media (max-width: 420px) {
+  .image {
+    max-height: 85vw !important;
   }
-  15% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(45deg);
-  }
-  18% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(90deg);
-  }
-  28% {
-    left: 85%;
-    bottom: 10%;
-    transform: rotate(90deg);
-  }
-  30% {
-    left: 85%;
-    bottom: 10%;
-    transform: rotate(0deg);
-  }
-  40% {
-    left: 85%;
-    bottom: 85%;
-    transform: rotate(0deg);
-  }
-  48% {
-    left: 85%;
-    bottom: 85%;
-    transform: rotate(-90deg);
-  }
-  58% {
-    left: 10%;
-    bottom: 85%;
-    transform: rotate(-90deg);
-  }
-  68% {
-    left: 10%;
-    bottom: 85%;
-    transform: rotate(-180deg);
-  }
-  79% {
-    left: 10%;
-    bottom: 10%;
-    transform: rotate(-180deg);
-  }
-  81% {
-    left: 10%;
-    bottom: 10%;
-    transform: rotate(-270deg);
-  }
-  88% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(-270deg);
-  }
-  90% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(-140deg);
-  }
-  100% {
-    left: 0%;
-    bottom: 0%;
-    transform: rotate(-140deg);
-  }
-}
-
-@keyframes ant-3-animation {
-  0% {
-    left: 100%;
-    bottom: 0%;
-    transform: rotate(-45deg);
-  }
-  15% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(-45deg);
-  }
-  18% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(-90deg);
-  }
-  28% {
-    left: 0%;
-    bottom: 10%;
-    transform: rotate(-90deg);
-  }
-  30% {
-    left: 0%;
-    bottom: 10%;
-    transform: rotate(0deg);
-  }
-  45% {
-    left: 0%;
-    bottom: 90%;
-    transform: rotate(0deg);
-  }
-  48% {
-    left: 0%;
-    bottom: 90%;
-    transform: rotate(90deg);
-  }
-  58% {
-    left: 100%;
-    bottom: 90%;
-    transform: rotate(90deg);
-  }
-  60% {
-    left: 100%;
-    bottom: 90%;
-    transform: rotate(180deg);
-  }
-  75% {
-    left: 100%;
-    bottom: 10%;
-    transform: rotate(180deg);
-  }
-  81% {
-    left: 100%;
-    bottom: 10%;
-    transform: rotate(270deg);
-  }
-  88% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(270deg);
-  }
-  90% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(180deg);
-  }
-  92% {
-    left: 50%;
-    bottom: 10%;
-    transform: rotate(130deg);
-  }
-  100% {
-    left: 100%;
-    bottom: 0%;
-    transform: rotate(130deg);
+  .accordion_button,
+  .collapsed {
+    font-size: 9vw !important;
   }
 }

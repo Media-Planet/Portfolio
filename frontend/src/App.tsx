@@ -4,7 +4,7 @@ import DigitalMarketing from "./pages/services/digitalMarketing/digitalMarketing
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import About from "./pages/about/About";
+import About from "./pages/About/About";
 
 function App() {
   return (

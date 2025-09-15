@@ -4,6 +4,7 @@ import logo from "../../assets/image/Logo.png";
 import servicesOne from "../../assets/image/Service 1.png";
 import servicesTwo from "../../assets/image/Service 2.png";
 import servicesThree from "../../assets/image/Service 3.png";
+import servicesThree_AR from "../../assets/image/Service 3_AR.png";
 import rocket from "../../assets/image/rocket.png";
 import { useTranslation } from "react-i18next";
 import { Direction } from "../../util/i18n/Direction";
@@ -16,7 +17,8 @@ interface Service {
 }
 function Home() {
 
-    const [t] = useTranslation();
+    const [t, i18n] = useTranslation();
+
 
     const services: Service[] = [
         {
@@ -31,14 +33,14 @@ function Home() {
         },
         {
             title: t("Digital marketing campaigns and content creation"),
-            image: `${servicesThree}`,
+            image: `${(i18n.language === 'ar') ? servicesThree_AR : servicesThree}`,
             alt: t("Alien doing marketing"),
         },
     ];
 
     return (
         <>
-            <div className={`containerr bg-primary Times_New_RomanF_italic`} dir={Direction || 'rtl'}>
+            <div className={`containerr bg-primary Times_New_RomanF_italic`} dir={Direction || 'ltr'}>
                 {/* Header Section */}
                 <div
                     className={`row  align-items-center justify-content-center align-items-center `}
@@ -47,7 +49,7 @@ function Home() {
                         {/* left */}
                         <div className={`${styles.cardCustom}`}>
                             <h1
-                                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1}`}
+                                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${(i18n.language === 'ar') ? 'pe-2' : ''}`}
                             >
                                 {t("Media Planet")}
                             </h1>
@@ -57,22 +59,22 @@ function Home() {
                                 </p>
                                 <img
                                     src="src\assets\image\halfMoon.png"
-                                    className={`${styles.halfMoon}`}
+                                    className={`${styles.halfMoon} ${(i18n.language === 'ar') ? styles['mirror-y'] : ''}`}
                                     alt="half moon"
                                 />
                             </div>
                             <div className=" mt-4">
-                                <a href="#form" className={`${styles.btnCustom}`}>
+                                <a href="#form" className={`${styles['btnCustom']} ${(i18n.language === 'ar') ? styles['btn_1'] : ''}`}>
                                     <img
                                         src={logo}
-                                        className={`${styles.buttonLogo} `}
+                                        className={`${styles.buttonLogo}`}
                                         alt="logo"
-                                    />{" "}
+                                    />
                                     {t("Start Your Journey")}
                                 </a>
                                 <a
                                     href="#"
-                                    className={`mt-4  ${styles.btnCustom} ${styles.btnGallery}`}
+                                    className={`mt-4 ${styles.btnGallery} ${(i18n.language === 'ar') ? styles['btn_2'] : styles['btnCustom']}`}
                                 >
                                     {t("Gallery")}
                                 </a>
@@ -81,7 +83,7 @@ function Home() {
                     </div>
                     {/* right */}
                     {/* Image  */}
-                    <div className="col-md-6 d-flex justify-content-end  ">
+                    <div className={`col-md-6 d-flex justify-content-end ${(i18n.language === 'ar') ? styles['mirror-y'] : ''}`}>
                         <img
                             src={TVAline}
                             alt="Alien on TV"
@@ -182,7 +184,7 @@ function Home() {
                             </form>
                         </div>
 
-                        <div className="col-md-6 text-center mt-4 mt-md-0">
+                        <div className={`col-md-6 text-center mt-4 mt-md-0 ${(i18n.language === 'en') ? styles['mirror-y'] : ''}`}>
                             <img
                                 src={rocket}
                                 alt="Rocket"

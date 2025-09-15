@@ -1,9 +1,8 @@
-export let Direction : string;
+export let Direction : string = 'ltr';
 
 export function handleDirection(lang : string) {
     
     Direction = lang === 'ar' ? 'rtl' : 'ltr';
-    console.log(Direction);
 
     return Direction;
 }

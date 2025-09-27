@@ -3,22 +3,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import styles from ".//About.module.css";
 import AboutImage from "../../assets/image/About.png";
+import { useTranslation } from "react-i18next";
+import { Direction } from "../../util/i18n/Direction";
 
 function About() {
+  const [t, i18n] = useTranslation();
+
   return (
     <>
       <Drop
-        title_1="Vision"
-        title_2="Mission"
-        title_3="Values"
-        body_1="To be one of the most creative, innovative marketing agencies and shift the marketing industry into an entertainment one. "
-        body_2="To blend creativity and innovation to transform traditional marketing into captivating entertainment experiences."
-        list_1="We prioritize originality and imagination in every campaign to deliver unforgettable experiences."
-        list_2="We embrace cutting-edge technology and forward-thinking strategies to revolutionize the marketing industry."
-        list_3="Our clients success is our priority, and we tailor solutions to meet their unique needs and aspirations."
-        list_4="We are committed to delivering excellence in every project, ensuring outstanding results."
-        list_5="We uphold honesty and transparency in our dealings, building trust with clients and partners."
-        list_6="We celebrate diversity and create campaigns that resonate with audiences of all backgrounds."
+        title_1={t("Vision")}
+        title_2={t("Mission")}
+        title_3={t("Values")}
+        body_1={t("To be one of the most creative, innovative marketing agencies and shift the marketing industry into an entertainment one.")}
+        body_2={t("To blend creativity and innovation to transform traditional marketing into captivating entertainment experiences.")}
+        list_1={t("We prioritize originality and imagination in every campaign to deliver unforgettable experiences.")}
+        list_2={t("We embrace cutting-edge technology and forward-thinking strategies to revolutionize the marketing industry.")}
+        list_3={t("Our clients success is our priority, and we tailor solutions to meet their unique needs and aspirations.")}
+        list_4={t("We are committed to delivering excellence in every project, ensuring outstanding results.")}
+        list_5={t("We uphold honesty and transparency in our dealings, building trust with clients and partners.")}
+        list_6={t("We celebrate diversity and create campaigns that resonate with audiences of all backgrounds.")}
       />
     </>
   );
@@ -26,7 +30,7 @@ function About() {
 // this is the accordion component that will be used in the About page
 const Drop: React.FC<DropProps> = (props) => {
   return (
-    <div>
+    <div dir={Direction || 'ltr'}>
       <div className="align-self-center About_Container">
         <div className={`accordion ${styles.accordion}`} id="accordionExample">
           <div className={`accordion-item ${styles.accordion_item}`}>

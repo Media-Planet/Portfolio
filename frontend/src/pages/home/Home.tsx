@@ -14,6 +14,7 @@ interface Service {
     title: string;
     image: string;
     alt: string;
+    route: string;
 }
 function Home() {
 
@@ -25,16 +26,19 @@ function Home() {
             title: t("Web Design & Development"),
             image: `${servicesOne}`,
             alt: t("Alien working on a laptop"),
+            route:'webdev',
         },
         {
             title: t("Board Game Design"),
             image: `${servicesTwo}`,
             alt: t("Alien designing a board game"),
+            route:'board-game',
         },
         {
             title: t("Digital marketing campaigns and content creation"),
             image: `${(i18n.language === 'ar') ? servicesThree_AR : servicesThree}`,
             alt: t("Alien doing marketing"),
+            route:'digital-marketing',
         },
     ];
 
@@ -94,7 +98,7 @@ function Home() {
                 </div>
 
                 {/* Services Section */}
-                <div className={` my-5 text-center align-items-center `}>
+                <div className={` my-5 text-center align-items-center `} id="services">
                     <h2
                         className={`${styles.cardH1Font} ${styles.margin} ${styles.glitch}`}
                     >
@@ -106,16 +110,18 @@ function Home() {
                                 key={index}
                                 className={`col-md-4 mb-4 ${styles.serviceCard}`}
                             >
-                                <div
-                                    className={`p-3 ${styles.h300} d-flex flex-column justify-content-between `}
-                                >
-                                    <img
-                                        src={service.image}
-                                        alt={service.alt}
-                                        className={` mb-3 img-fluid b-1 ${styles.serviceImage}`}
-                                    />
-                                    <p className={` mb-0 ${styles.title}`}>{service.title}</p>
-                                </div>
+                                <a href={`services/${service.route}`} className="text-decoration-none">
+                                    <div
+                                        className={`p-3 ${styles.h300} d-flex flex-column justify-content-between `}
+                                    >
+                                        <img
+                                            src={service.image}
+                                            alt={service.alt}
+                                            className={` mb-3 img-fluid b-1 ${styles.serviceImage}`}
+                                        />
+                                        <p className={` mb-0 ${styles.title}`}>{service.title}</p>
+                                    </div>
+                                </a>
                             </div>
                         ))}
                     </div>

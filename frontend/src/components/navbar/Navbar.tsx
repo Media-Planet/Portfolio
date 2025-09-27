@@ -59,7 +59,7 @@ function Navbar() {
                             <a className="nav-link text-light" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-light" href="web-development">Servers</a>
+                            <a className="nav-link text-light" href="#services">Services</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-light" href="about">about</a>

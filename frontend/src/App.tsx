@@ -12,9 +12,9 @@ function App() {
       <Navbar />
       {/* <WebDev /> */}
       {/* <BoardG /> */}
-      <DigitalMarketing />
+      {/* <DigitalMarketing /> */}
       {/* <Home /> */}
-      {/* <About /> */}
+      <About />
       <Footer />
     </>
   );

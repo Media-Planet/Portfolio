@@ -29,9 +29,10 @@ function WebDev() {
                     </section>
                 </div>
 
-        <div className="d-flex justify-content-center">
-          <p className="border border-black w-75 mt-4 mt-sm-5"></p>
-        </div>
+                <div className='d-flex justify-content-center'>
+                    <p className='border border-black w-75 mt-4 mt-sm-5'></p>
+                </div>
+
 
                 <div>
                     <div className='row'>
@@ -41,37 +42,6 @@ function WebDev() {
                                 {t("From landing pages to full-scale platforms, we design websites that are fast, responsive, and built to tell your brand’s story in style.")}
                             </p>
 
-              <ul className="list-unstyled list d-flex flex-column gap-4 gap-sm-5 m-0">
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
-                  <img
-                    src={imgs.sec2_S1}
-                    className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
-                  />
-                  Custom UI/UX Design
-                </li>
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
-                  <img
-                    src={imgs.sec2_S2}
-                    className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
-                  />
-                  Responsive Development
-                </li>
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
-                  <img
-                    src={imgs.sec2_S3}
-                    className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
-                  />
-                  E-commerce
-                </li>
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
-                  <img
-                    src={imgs.sec2_S4}
-                    className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
-                  />
-                  SEO & Performance Optimization
-                </li>
-              </ul>
-            </section>
                             <ul className='list-unstyled list d-flex flex-column gap-4 gap-sm-5 m-0'>
                                 <li className={`${style['Sec2_Ul_S']} InterF text-black`}><img src={imgs.sec2_S1} className={`me-2 me-sm-4 ${style['Sec2_S_img_S']}`} />
                                     {t("Custom UI/UX Design")}

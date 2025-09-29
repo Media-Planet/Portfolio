@@ -12,7 +12,6 @@ import sec3_S5 from "../../../assets/Images/services/webDev/small_5.png";
 import sec3_S6 from "../../../assets/Images/services/webDev/small_6.png";
 import sec3_S7 from "../../../assets/Images/services/webDev/small_7.png";
 
-
 export default function Imgs() {
   return {
     photo,

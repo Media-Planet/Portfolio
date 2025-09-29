@@ -1,14 +1,11 @@
-import WebDev from "./pages/services/webDevelopment/webDev";
-import BoardG from "./pages/services/boardGames/borderG";
-import DigitalMarketing from "./pages/services/digitalMarketing/digitalMarketing";
-import Home from "./pages/home/Home";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import About from "./pages/about/About";
+import Layout from "./layout/layout";
 
 function App() {
   return (
     <>
+<<<<<<< HEAD
+      <Layout />
+=======
       <Navbar />
       {/* <WebDev /> */}
       {/* <BoardG /> */}
@@ -16,6 +13,7 @@ function App() {
       {/* <Home /> */}
       <About />
       <Footer />
+>>>>>>> About_me_Media_Planet_1
     </>
   );
 }

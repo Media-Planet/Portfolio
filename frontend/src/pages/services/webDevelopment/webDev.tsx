@@ -3,6 +3,7 @@ import style from "../services.module.css";
 import imgs_fun from "./data";
 import { Direction } from "../../../util/i18n/Direction";
 import sec2_png1 from "../../../assets/Images/services/webDev/2_AR.png";
+import styles from "../../home/home.module.css";
 
 function WebDev() {
   const imgs = imgs_fun();
@@ -16,15 +17,13 @@ function WebDev() {
         dir={Direction || "ltr"}
       >
         <h2
-          className={`Times_New_RomanF_italic text-black pt-2 ${style["H_S"]}`}
+          className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S"]}`}
         >
           {t("Web Development")}
         </h2>
         <div className="row justify-content-between">
           <section className="d-grid col-8 col-sm-7 pe-0">
-            <p
-              className={`align-self-center InterF text-black mb-0 ${style["P_S"]} pe-0`}
-            >
+            <p className={` ${style["P_S"]} ${styles.paragraph} pe-0`}>
               {t(
                 "We craft stunning, responsive websites that combine bold design with smooth functionality—built to impress and perform."
               )}
@@ -59,12 +58,12 @@ function WebDev() {
           <div className="row">
             <section className="col-sm-6">
               <h2
-                className={`Times_New_RomanF_italic text-black mt-2 mt-sm-3 mb-sm-4  ${style["Sec2_H_S"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["Sec2_H_S"]}`}
               >
                 {t("What Do We Do ?")}
               </h2>
               <p
-                className={`InterF text-black mb-4 mb-sm-5 ${style["Sec2_P_S_2"]}`}
+                className={`${styles.paragraph} mb-4 mb-sm-5 ${style["Sec2_P_S_2"]}`}
               >
                 {t(
                   "From landing pages to full-scale platforms, we design websites that are fast, responsive, and built to tell your brand’s story in style."
@@ -72,28 +71,28 @@ function WebDev() {
               </p>
 
               <ul className="list-unstyled list d-flex flex-column gap-4 gap-sm-5 m-0">
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
+                <li className={`${style["Sec2_Ul_S"]} ${styles.paragraph}`}>
                   <img
                     src={imgs.sec2_S1}
                     className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
                   />
                   {t("Custom UI/UX Design")}
                 </li>
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
+                <li className={`${style["Sec2_Ul_S"]} ${styles.paragraph}`}>
                   <img
                     src={imgs.sec2_S2}
                     className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
                   />
                   {t("Responsive Development")}
                 </li>
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
+                <li className={`${style["Sec2_Ul_S"]} ${styles.paragraph}`}>
                   <img
                     src={imgs.sec2_S3}
                     className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
                   />
                   {t("E-commerce")}
                 </li>
-                <li className={`${style["Sec2_Ul_S"]} InterF text-black`}>
+                <li className={`${style["Sec2_Ul_S"]} ${styles.paragraph}`}>
                   <img
                     src={imgs.sec2_S4}
                     className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
@@ -110,11 +109,11 @@ function WebDev() {
                 className={`${style["img_S"]}`}
               />
               <h3
-                className={`Times_New_RomanF_italic text-black ${style["Sec2_H_S_2"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["Sec2_H_S_2"]}`}
               >
                 {t("Built for every screen")}
               </h3>
-              <p className={`InterF text-black ${style["Sec2_P_S_2"]}`}>
+              <p className={`${styles.paragraph} ${style["Sec2_P_S_2"]}`}>
                 {t(
                   "Your website will shine everywhere from big screens to mobile devices without losing speed or style."
                 )}
@@ -128,7 +127,7 @@ function WebDev() {
 
         <div>
           <h2
-            className={`Times_New_RomanF_italic text-black mt-1 mt-sm-2 mb-sm-5 ${style["H_S3"]}`}
+            className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S3"]}`}
           >
             {t("Our Approach")}
           </h2>
@@ -136,19 +135,19 @@ function WebDev() {
           <section className="row gap-5 justify-content-around">
             <div className="col-3 d-flex justify-content-center flex-column text-center">
               <img src={imgs.sec3_P1} />
-              <p className={`${style["Sec3_P_S"]} InterF text-black`}>
+              <p className={`${style["Sec3_P_S"]} ${styles.paragraph}`}>
                 {t("Understand goals and user needs")}
               </p>
             </div>
             <div className="col-3 d-flex justify-content-center flex-column text-center">
               <img src={imgs.sec3_P2} />
-              <p className={`${style["Sec3_P_S"]} InterF text-black`}>
+              <p className={`${style["Sec3_P_S"]} ${styles.paragraph}`}>
                 {t("Create beautiful, functional layouts")}
               </p>
             </div>
             <div className="col-3 d-flex justify-content-center flex-column text-center">
               <img src={imgs.sec3_P3} />
-              <p className={`${style["Sec3_P_S"]} InterF text-black`}>
+              <p className={`${style["Sec3_P_S"]} ${styles.paragraph}`}>
                 {t("Develop and launch with precision")}
               </p>
             </div>
@@ -159,11 +158,11 @@ function WebDev() {
           <section className="row">
             <div className="col-7">
               <h2
-                className={`Times_New_RomanF_italic text-black mt-sm-2 mb-sm-5 ${style["H_S4"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S4"]}`}
               >
                 {t("Why Choose Us?")}
               </h2>
-              <p className={`InterF text-black my-sm-5 ${style["P_S4"]}`}>
+              <p className={`${styles.paragraph} my-sm-5 ${style["P_S4"]}`}>
                 {t(
                   "We’re not just designers – we are digital storytellers. We create web experiences that connect people together and help your business stand out, grow online, and turn visitors into loyal customers."
                 )}
@@ -172,7 +171,7 @@ function WebDev() {
             <div className="col-5 align-content-center">
               <li className="list-unstyled d-flex flex-column gap-sm-4">
                 <ul
-                  className={`${style["Sec3_Ul_S"]} InterF text-black align-content-center`}
+                  className={`${style["Sec3_Ul_S"]} ${styles.paragraph} align-content-center`}
                 >
                   <img
                     src={imgs.sec3_S5}
@@ -182,7 +181,7 @@ function WebDev() {
                   {t("Fast Load Times")}
                 </ul>
                 <ul
-                  className={`${style["Sec3_Ul_S"]} InterF text-black align-content-center`}
+                  className={`${style["Sec3_Ul_S"]} ${styles.paragraph} align-content-center`}
                 >
                   <img
                     src={imgs.sec3_S6}
@@ -192,7 +191,7 @@ function WebDev() {
                   {t("Accessible & User-Friendly")}
                 </ul>
                 <ul
-                  className={`${style["Sec3_Ul_S"]} InterF text-black align-content-center`}
+                  className={`${style["Sec3_Ul_S"]} ${styles.paragraph} align-content-center`}
                 >
                   <img
                     src={imgs.sec3_S7}

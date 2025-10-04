@@ -17,7 +17,7 @@ function WebDev() {
         dir={Direction || "ltr"}
       >
         <h2
-          className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S"]}`}
+          className={`${styles.cardH1Font} ${styles.glitch}  ${style["H_S"]}`}
         >
           {t("Web Development")}
         </h2>
@@ -58,7 +58,7 @@ function WebDev() {
           <div className="row">
             <section className="col-sm-6">
               <h2
-                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["Sec2_H_S"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S"]}`}
               >
                 {t("What Do We Do ?")}
               </h2>
@@ -109,7 +109,7 @@ function WebDev() {
                 className={`${style["img_S"]}`}
               />
               <h3
-                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["Sec2_H_S_2"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S_2"]}`}
               >
                 {t("Built for every screen")}
               </h3>
@@ -127,7 +127,7 @@ function WebDev() {
 
         <div>
           <h2
-            className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S3"]}`}
+            className={`${styles.cardH1Font} ${styles.glitch}  ${style["H_S3"]}`}
           >
             {t("Our Approach")}
           </h2>
@@ -158,7 +158,7 @@ function WebDev() {
           <section className="row">
             <div className="col-7">
               <h2
-                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S4"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch}  ${style["H_S4"]}`}
               >
                 {t("Why Choose Us?")}
               </h2>

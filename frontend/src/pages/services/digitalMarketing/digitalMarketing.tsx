@@ -18,7 +18,7 @@ function DigitalMarketing() {
         dir={Direction || "ltr"}
       >
         <h2
-          className={`${style["H_S"]} ${styles.cardH1Font} ${styles.glitch} ${styles.title_1}`}
+          className={`${style["H_S"]} ${styles.cardH1Font} ${styles.glitch} `}
         >
           {t("Digital Marketing")}
         </h2>
@@ -59,7 +59,7 @@ function DigitalMarketing() {
           <div className="row">
             <section className="col-sm-6">
               <h2
-                className={`${style["Sec2_H_S"]} ${styles.cardH1Font} ${styles.glitch} ${styles.title_1}`}
+                className={`${style["Sec2_H_S"]} ${styles.cardH1Font} ${styles.glitch} `}
               >
                 {t("What Do We Do ?")}
               </h2>
@@ -101,7 +101,7 @@ function DigitalMarketing() {
                 className={`${style["img_S"]}`}
               />
               <h3
-                className={` ${style["Sec2_H_S_2"]} ${styles.cardH1Font} ${styles.glitch} ${styles.title_1}`}
+                className={` ${style["Sec2_H_S_2"]} ${styles.cardH1Font} ${styles.glitch} `}
               >
                 {t("Results across channels")}
               </h3>
@@ -119,7 +119,7 @@ function DigitalMarketing() {
 
         <div>
           <h2
-            className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S3"]}`}
+            className={`${styles.cardH1Font} ${styles.glitch} ${style["H_S3"]}`}
           >
             {t("Our Approach")}
           </h2>
@@ -158,7 +158,7 @@ function DigitalMarketing() {
           <section className="row">
             <div className="col-7">
               <h2
-                className={`${styles.cardH1Font} ${styles.glitch} ${styles.title_1} ${style["H_S"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch}  ${style["H_S"]}`}
               >
                 {t("Why Choose Us?")}
               </h2>

@@ -1,172 +1,197 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* -------------General----------- */
 
 /* --------------sec1------------- */
 
-.H_S {
-    font-size: 8vw;
-}
-
 .P_S {
-    font-size: 2.7vw;
+  font-size: 2.7vw;
 }
 
 .img_S {
-    height: auto;
-    width: 100%;
-
+  height: auto;
+  width: 100%;
 }
 
 .btn_S {
-    font-size: 4vw;
+  font-size: 4vw;
 }
 
 .btm_Img_S {
-    width: 6vw;
+  width: 6vw;
 }
 
 /* --------------sec2------------- */
 .Sec2_S_img_S {
-    width: 3.5vw;
-}
-
-.Sec2_H_S {
-    font-size: 6vw;
-}
-
-.Sec2_H_S_2 {
-    font-size: 4vw;
+  width: 3.5vw;
 }
 
 .Sec2_P_S_2 {
-    font-size: 2vw;
+  font-size: 2vw;
+  margin-top: 3vw;
 }
 
 .Sec2_Ul_S {
-    font-size: 2.3vw;
+  font-size: 2vw;
 }
 
 /* --------------sec3------------- */
-.H_S3 {
-    font-size: 8vw;
-}
 
 .Sec3_P_S {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 
 .Sec3_Ul_S {
-    font-size: 2.4vw;
+  font-size: 2.4vw;
 }
 
 .Sec3_S_img_S {
-    width: 3vw;
+  width: 3vw;
 }
 
 /* --------------sec4------------- */
-.H_S4 {
-    font-size: 7vw;
-}
 
 .P_S4 {
-    font-size: 2.7vw;
+  font-size: 2.7vw;
 }
 
 .Sec4_Ul_S {
-    font-size: 2.4vw;
+  font-size: 2.4vw;
 }
 
 .Sec4_S_img_S {
-    width: 3vw;
+  width: 3vw;
 }
 
-
 @media (max-width: 576px) {
+  /* --------------sec1------------- */
+  .H_S {
+    font-size: 10vw;
+  }
 
-    /* --------------sec1------------- */
-    .H_S {
-        font-size: 10vw;
-    }
+  .P_S {
+    font-size: 4.5vw;
+  }
 
-    .P_S {
-        font-size: 4.5vw;
-    }
+  .btn_S {
+    font-size: 4.4vw;
+  }
 
-    .btn_S {
-        font-size: 4.4vw;
-    }
+  .btm_Img_S {
+    width: 8vw;
+  }
 
-    .btm_Img_S {
-        width: 8vw;
-    }
+  /* --------------sec2------------- */
+  .Sec2_S_img_S {
+    width: 8vw;
+  }
 
-    /* --------------sec2------------- */
-    .Sec2_S_img_S {
-        width: 8vw;
-    }
+  .Sec2_H_S {
+    font-size: 10vw;
+  }
 
-    .Sec2_H_S {
-        font-size: 10vw;
-    }
+  .Sec2_H_S_2 {
+    font-size: 8vw;
+  }
 
-    .Sec2_H_S_2 {
-        font-size: 8vw;
-    }
+  .Sec2_P_S_2 {
+    font-size: 6vw;
+  }
 
-    .Sec2_P_S_2 {
-        font-size: 6vw;
-    }
+  .Sec2_Ul_S {
+    font-size: 4.5vw;
+  }
 
+  /* --------------sec3------------- */
+  .H_S3 {
+    font-size: 11vw;
+    text-align: center;
+  }
 
-    .Sec2_Ul_S {
-        font-size: 4.5vw;
-    }
+  .Sec3_P_S {
+    font-size: 4.5vw;
+    color: aqua;
+  }
 
-    /* --------------sec3------------- */
-    .H_S3 {
-        font-size: 11vw;
-        text-align: center;
-    }
+  .Sec3_Ul_S {
+    font-size: 2.4vw;
+  }
 
-    .Sec3_P_S {
-        font-size: 4.5vw;
-    }
+  .Sec3_S_img_S {
+    width: 3vw;
+  }
+}
+/* servies_1 */
+.btnCustom {
+  background-color: #0f0f0f;
+  color: #fff;
+  border-radius: 1.5vw;
+  padding: 0.6vw 1vw;
+  margin-right: 1vw;
+  width: 30vw;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.7vw;
+  text-align: center;
+  color: silver;
+}
 
-    .Sec3_Ul_S {
-        font-size: 2.4vw;
-    }
-
-    .Sec3_S_img_S {
-        width: 3vw;
-    }
-
-    /* --------------sec4------------- */
-    .H_S4 {
-        font-size: 11vw;
-    }
-
-    .P_S4 {
-        font-size: 4.5vw;
-    }
-
-    .Sec4_Ul_S {
-        font-size: 5vw;
-    }
-
-    .Sec4_S_img_S {
-        width: 5vw;
-    }
-
-
-    /* --------------sec2_DM------------- */
-
-    .Sec2_DM_H_S_2 {
-        font-size: 8vw;
-    }
-
+.btnCustom:hover {
+  transform: translateY(-1vw) scale(1.05) rotate(-2deg);
+  box-shadow: 0 0.5vw 2vw rgba(0, 0, 0, 0.15);
+  background: linear-gradient(90deg, #0f0f0f 60%, #444 100%);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    box-shadow 0.3s, background 0.6s;
+}
+.btnWeb {
+  width: 48vw;
+  height: auto;
+}
+.paragraphWeb {
+  position: relative;
+  top: 2vw;
+}
+.titleWeb {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+  font-weight: bold;
+}
+.codeImage {
+  position: relative;
+  top: -10vw;
+}
+.lineWeb {
+  position: relative;
+  top: -8vw;
+}
+.sectionTwo {
+  position: relative;
+  top: -10vw;
+}
+.sectionThree {
+  position: relative;
+  top: -13vw;
+}
+.sectionThreehead {
+  margin-bottom: 7vw;
+}
+.SectionThreeDes {
+  margin-top: 2vw;
+}
+.sectionFour {
+  position: relative;
+  top: -10vw;
+}
+.ulSectionFour {
+  position: relative !important;
+  top: 0.6vw !important;
+  display: inline;
+}
+.sectionFourList {
+  position: relative;
+  top: 5.6vw;
 }

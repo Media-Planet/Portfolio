@@ -117,13 +117,16 @@ function Home() {
         </div>
 
         {/* Services Section */}
-        <div className={` my-5 text-center align-items-center `} id="services">
+        <div
+          className={` my-5 text-center align-items-center   `}
+          id="services"
+        >
           <h2
-            className={`${styles.cardH1Font} ${styles.margin} ${styles.glitch}`}
+            className={`${styles.cardH1Font} ${styles.margin} ${styles.glitch} `}
           >
             {t("Our services")}
           </h2>
-          <div className={`row ${styles.services} `}>
+          <div className={`row ${styles.services}  `}>
             {services.map((service, index) => (
               <div
                 key={index}

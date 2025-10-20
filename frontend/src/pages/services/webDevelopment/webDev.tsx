@@ -16,16 +16,25 @@ function WebDev() {
         className={`containerr bg-primary Times_New_RomanF_italic ${styles.cardCustom}`}
         dir={Direction || "ltr"}
       >
-        <h2 className={`${styles.cardH1Font} ${styles.glitch}  `}>
+        <h2
+          className={`${styles.cardH1Font} ${styles.glitch} ${style.SectionOneTitle} `}
+        >
           {t("Web Development")}
         </h2>
-        <div className="row justify-content-between">
+        <div
+          className={`row justify-content-between ${style.firstSectionSecoundHalf}`}
+        >
           <section className={`d-grid col-8 col-sm-7 pe-0 `}>
             <p className={`  ${styles.paragraph} ${style.paragraphWeb} `}>
               {t(
                 "We craft stunning, responsive websites that combine bold design with smooth functionality—built to impress and perform."
               )}
             </p>
+            <img
+              src={imgs.photo}
+              className={` ${style.imgWebDev2}`}
+              alt="... coding"
+            />
             <div className={`${style.btnDiv}`}>
               <button className={`${style.btnCustom} ${style.btnWeb}`}>
                 <img
@@ -53,8 +62,8 @@ function WebDev() {
         </div>
 
         <div className={`${style.sectionTwo}`}>
-          <div className="row">
-            <section className="col-sm-6">
+          <div className={`row ${style.sectionTwocol} `}>
+            <section className={`col-sm-6 ${style.sectionTwoSub}`}>
               <h2
                 className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S"]}`}
               >
@@ -101,11 +110,13 @@ function WebDev() {
               </ul>
             </section>
 
-            <section className="col-sm-6">
+            <section
+              className={`col-sm-6 ${style.sectionTwoSub} ${style.sectionTwo2}`}
+            >
               <img
                 src={i18n.language === "ar" ? sec2_png1 : imgs.sec2_png1}
                 alt="#"
-                className={`${style["img_S"]}`}
+                className={`${style["img_S"]} ${style.imgSec2Web}`}
               />
               <h3
                 className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S_2"]}`}
@@ -119,8 +130,10 @@ function WebDev() {
               </p>
             </section>
           </div>
-          <div className="d-flex mt-3">
-            <p className="mx-5 border border-black w-25"></p>
+          <div className={`d-flex mt-3 ${style.sectionThreeHalfLine}`}>
+            <p
+              className={`mx-5 border border-black w-25 ${style.sectionThreeHalfLine}`}
+            ></p>
           </div>
         </div>
 
@@ -131,9 +144,13 @@ function WebDev() {
             {t("Our Approach")}
           </h2>
 
-          <section className="row gap-5 justify-content-around">
-            <div className="col-3 d-flex justify-content-center flex-column text-center">
-              <img src={imgs.sec3_P1} />
+          <section
+            className={`row gap-5 justify-content-around ${style.sectionFourParts}`}
+          >
+            <div
+              className={`col-3 d-flex justify-content-center flex-column text-center`}
+            >
+              <img src={imgs.sec3_P1} className={style.sectionFourWebImg} />
               <p
                 className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} `}
               >
@@ -141,7 +158,7 @@ function WebDev() {
               </p>
             </div>
             <div className="col-3 d-flex justify-content-center flex-column text-center">
-              <img src={imgs.sec3_P2} />
+              <img src={imgs.sec3_P2} className={style.sectionFourWebImg} />
               <p
                 className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes}`}
               >
@@ -149,7 +166,7 @@ function WebDev() {
               </p>
             </div>
             <div className="col-3 d-flex justify-content-center flex-column text-center">
-              <img src={imgs.sec3_P3} />
+              <img src={imgs.sec3_P3} className={style.sectionFourWebImg} />
               <p
                 className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes}`}
               >
@@ -159,13 +176,17 @@ function WebDev() {
           </section>
         </div>
 
-        <div className={`mt-sm-5 ${style.sectionFour}`}>
-          <section className="row">
-            <div className="col-7">
-              <h2 className={`${styles.cardH1Font} ${styles.glitch} }`}>
+        <div className={`mt-sm-5 ${style.sectionFour} `}>
+          <section className={`row ${style.sectionFourcol} `}>
+            <div className={`col-6 `}>
+              <h2
+                className={`${styles.cardH1Font} ${styles.glitch} ${style.sectionFourHeader}  `}
+              >
                 {t("Why Choose Us?")}
               </h2>
-              <p className={`${styles.paragraph} my-sm-5 }`}>
+              <p
+                className={`${styles.paragraph} my-sm-5 ${style.sectionFourParagraph}`}
+              >
                 {t(
                   "We’re not just designers – we are digital storytellers. We create web experiences that connect people together and help your business stand out, grow online, and turn visitors into loyal customers."
                 )}
@@ -175,7 +196,9 @@ function WebDev() {
               className={`col-5 align-content-center ${style.sectionFourList}`}
             >
               <li className="list-unstyled d-flex flex-column gap-sm-4">
-                <ul className={` ${styles.paragraph} align-content-center`}>
+                <ul
+                  className={`${styles.paragraph} align-content-center ${style.ulSectionFour}`}
+                >
                   <img
                     src={imgs.sec3_S5}
                     className={`${style["Sec3_S_img_S"]} mx-2`}
@@ -183,7 +206,7 @@ function WebDev() {
                   />
                   {t("Fast Load Times")}
                 </ul>
-                <ul className={` ${styles.paragraph} `}>
+                <ul className={` ${styles.paragraph} ${style.ulSectionFour} `}>
                   <img
                     src={imgs.sec3_S6}
                     className={`${style["Sec3_S_img_S"]} mx-2`}
@@ -191,7 +214,7 @@ function WebDev() {
                   />
                   {t("Accessible & User-Friendly")}
                 </ul>
-                <ul className={` ${styles.paragraph} `}>
+                <ul className={` ${styles.paragraph} ${style.ulSectionFour}`}>
                   <img
                     src={imgs.sec3_S7}
                     className={`${style["Sec3_S_img_S"]} mx-2`}

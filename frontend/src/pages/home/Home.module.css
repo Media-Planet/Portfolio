@@ -110,7 +110,7 @@ body::before {
 }
 
 .title {
-  font-family: "inter", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 2vw !important;
   font-style: italic;
   color: #000000b2;

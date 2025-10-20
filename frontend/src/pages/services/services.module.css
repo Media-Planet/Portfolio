@@ -24,6 +24,9 @@
 .btm_Img_S {
   width: 6vw;
 }
+.imgWebDev2 {
+  display: none;
+}
 
 /* --------------sec2------------- */
 .Sec2_S_img_S {
@@ -37,6 +40,9 @@
 
 .Sec2_Ul_S {
   font-size: 2vw;
+}
+.imgSec2Marketing {
+  width: 37vw;
 }
 
 /* --------------sec3------------- */
@@ -125,6 +131,15 @@
     width: 3vw;
   }
 }
+.Sec3_S_img_Marketing {
+  width: 27vw;
+  height: 20vw;
+}
+.sec3Desimg {
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
 /* servies_1 */
 .btnCustom {
   background-color: #0f0f0f;
@@ -181,6 +196,7 @@
 }
 .SectionThreeDes {
   margin-top: 2vw;
+  font-family: "Times New Roman", Times, serif;
 }
 .sectionFour {
   position: relative;
@@ -194,4 +210,134 @@
 .sectionFourList {
   position: relative;
   top: 5.6vw;
+}
+
+/* responsive Web */
+@media (max-width: 1100px) {
+  .codeImage {
+    top: -1.7vw;
+  }
+  .paragraphWeb {
+    font-size: 3.2vw;
+  }
+  .btnWeb {
+    position: relative;
+    top: 5vw;
+  }
+  .lineWeb {
+    top: 2vw;
+  }
+  .sectionTwo {
+    position: relative;
+    top: 0vw;
+  }
+  .sectionTwocol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionTwoSub {
+    width: 100%;
+  }
+  .Sec2_H_S,
+  .sectionThreehead {
+    display: block;
+    align-items: center;
+  }
+  .Sec2_P_S_2 {
+    font-size: 3.2vw;
+  }
+  .Sec2_Ul_S {
+    font-size: 2.5vw;
+  }
+  .Sec2_S_img_S {
+    width: 4vw;
+  }
+  .imgSec2Web {
+    position: relative;
+    left: 45vw;
+    width: 45vw;
+  }
+  .sectionTwo2 {
+    position: relative;
+    top: -40vw;
+  }
+  .sectionThreeHalfLine {
+    position: relative;
+    top: -18vw;
+  }
+  .sectionThree {
+    top: -40vw;
+  }
+  .sectionFourParts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionFourWebImg {
+    width: 35vw;
+    position: relative;
+    left: -8vw;
+  }
+  .SectionThreeDes {
+    font-size: 4vw;
+    width: max-content;
+    position: relative;
+    left: -18.4vw;
+    margin-bottom: 10vw;
+  }
+  .sectionFour {
+    top: -35vw;
+  }
+  .sectionFourcol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionFourHeader {
+    width: max-content;
+    position: relative;
+    left: -12vw;
+  }
+  .sectionFourParagraph {
+    font-size: 3.2vw;
+    width: 90vw;
+    position: relative;
+    left: -21vw;
+  }
+  .sectionFourList {
+    width: max-content;
+    position: relative;
+    left: -22vw;
+  }
+  .Sec3_S_img_S {
+    width: 5vw;
+    margin-right: 1vw;
+  }
+  .ulSectionFour {
+    font-size: 3.2vw;
+  }
+}
+@media (max-width: 900px) {
+  .SectionOneTitle {
+    margin-bottom: -6vw;
+  }
+  .firstSectionSecoundHalf {
+    margin-bottom: -5vw;
+  }
+  .sectionTwo {
+    margin-top: -13vw;
+    margin-bottom: -12vw;
+  }
+  .sectionThree {
+    margin-top: 2vw;
+    margin-bottom: -25vw;
+  }
+}
+@media (max-width: 766px) {
+  .imgWebDev2 {
+    display: block;
+  }
+  .img_S {
+    display: none;
+  }
 }

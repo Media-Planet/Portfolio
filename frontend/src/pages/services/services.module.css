@@ -118,11 +118,6 @@
     text-align: center;
   }
 
-  .Sec3_P_S {
-    font-size: 4.5vw;
-    color: aqua;
-  }
-
   .Sec3_Ul_S {
     font-size: 2.4vw;
   }
@@ -336,8 +331,87 @@
 @media (max-width: 766px) {
   .imgWebDev2 {
     display: block;
+    width: 60vw;
+    position: relative;
+    left: 4vw;
   }
   .img_S {
     display: none;
+  }
+  .paragraphWeb {
+    position: relative;
+    left: 10vw;
+  }
+  .SectionOneTitle {
+    margin-bottom: -12vw !important;
+  }
+  .btnWeb {
+    font-size: 4.8vw;
+    width: 100%;
+    position: relative;
+    left: 4vw;
+  }
+  .buttonLogo {
+    width: 9vw;
+  }
+  .sectionTwo2 {
+    margin-top: 49vw;
+  }
+  .sectionFourParagraph {
+    position: relative;
+    left: -24vw;
+    margin-top: 10vw;
+  }
+  @media (max-width: 450px) {
+    .paragraphWeb {
+      position: relative;
+      left: 5vw;
+    }
+  }
+  @media (max-width: 402px) {
+    .paragraphWeb {
+      position: relative;
+      left: 2vw;
+    }
+    .sectionFourParagraph {
+      position: relative;
+      left: -25vw;
+    }
+  }
+  @media (max-width: 376px) {
+    .sectionFourParagraph {
+      position: relative;
+      left: -27vw;
+    }
+    .imgWebDev2,
+    .btnWeb {
+      left: -2vw;
+    }
+    .sectionFourWebImg {
+      left: -12vw;
+    }
+    .sectionFourParts {
+      position: relative;
+      left: 1vw;
+    }
+    .SectionThreeDes {
+      left: -23vw;
+    }
+    .ulSectionFour {
+      width: max-content;
+    }
+  }
+}
+@media (max-width: 346px) {
+  .SectionOneTitle,
+  .Sec2_H_S,
+  .Sec2_H_S_2,
+  .sectionThreehead {
+    font-size: 7vw !important;
+  }
+  .sectionFourHeader {
+    font-size: 7vw !important;
+    position: relative;
+    left: -18vw;
   }
 }

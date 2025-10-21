@@ -38,7 +38,7 @@ function WebDev() {
             <div className={`${style.btnDiv}`}>
               <button className={`${style.btnCustom} ${style.btnWeb}`}>
                 <img
-                  className={`${styles.buttonLogo} me-2`}
+                  className={`${styles.buttonLogo} ${style.buttonLogo} me-2`}
                   src={imgs.logo}
                   alt="Media Planet"
                 />

@@ -382,7 +382,8 @@
     }
   }
   @media (max-width: 689px) {
-    .imgSec2Web {
+    .imgSec2Web,
+    .imgSec2Marketing {
       display: none;
     }
   }

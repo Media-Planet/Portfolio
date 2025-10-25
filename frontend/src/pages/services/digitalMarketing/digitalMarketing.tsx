@@ -17,20 +17,30 @@ function DigitalMarketing() {
         className={`containerr bg-primary Times_New_RomanF_italic ${styles.cardCustom}`}
         dir={Direction || "ltr"}
       >
-        <h2 className={`${styles.cardH1Font} ${styles.glitch}  `}>
+        <h2
+          className={`${styles.cardH1Font} ${styles.glitch} ${style.SectionOneTitle} `}
+        >
           {t("Digital Marketing")}
         </h2>
-        <div className="row justify-content-between">
+        <div
+          className={`row justify-content-between ${style.firstSectionSecoundHalf}`}
+        >
           <section className="d-grid col-8 col-sm-7 pe-0">
             <p className={`  ${styles.paragraph} ${style.paragraphWeb} `}>
               {t(
                 "We create eye-catching content and smart campaigns that grow your brand, spark engagement, and drive results."
               )}
             </p>
+            <img
+              src={i18n.language === "ar" ? photo_AR : imgs.photo}
+              className={` ${style.imgWebDev2}`}
+              alt="... Marketing"
+            />
+
             <div className={`${style.btnDiv}`}>
               <button className={`${style.btnCustom} ${style.btnWeb}`}>
                 <img
-                  className={`${styles.buttonLogo} me-2`}
+                  className={`${styles.buttonLogo} ${style.buttonLogo} me-2`}
                   src={imgs.logo}
                   alt="Media Planet"
                 />
@@ -41,7 +51,7 @@ function DigitalMarketing() {
           <section className={`col p-0 ${style.codeImage}`}>
             <img
               src={i18n.language === "ar" ? photo_AR : imgs.photo}
-              className={`${style["img_S"]}`}
+              className={`${style["img_S"]} ${style.img_S_SectionOne}`}
               alt="... Marketing"
             />
           </section>
@@ -54,8 +64,8 @@ function DigitalMarketing() {
         </div>
 
         <div className={`${style.sectionTwo}`}>
-          <div className="row">
-            <section className="col-sm-6">
+          <div className={`row ${style.sectionTwocol} `}>
+            <section className={`col-sm-6 ${style.sectionTwoSub}`}>
               <h2
                 className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S"]}`}
               >
@@ -94,7 +104,9 @@ function DigitalMarketing() {
               </ul>
             </section>
 
-            <section className="col-sm-6">
+            <section
+              className={`col-sm-6 ${style.sectionTwoSub} ${style.sectionTwo2}`}
+            >
               <img
                 src={imgs.sec2_png1}
                 alt="#"
@@ -112,8 +124,10 @@ function DigitalMarketing() {
               </p>
             </section>
           </div>
-          <div className="d-flex mt-3">
-            <p className="mx-5 border border-black w-25"></p>
+          <div className={`d-flex mt-3 ${style.sectionThreeHalfLine}`}>
+            <p
+              className={`mx-5 border border-black w-25 ${style.sectionThreeHalfLine}`}
+            ></p>
           </div>
         </div>
 
@@ -124,14 +138,16 @@ function DigitalMarketing() {
             {t("Our Approach")}
           </h2>
 
-          <section className="row gap-5 justify-content-around">
+          <section
+            className={`row gap-5 justify-content-around ${style.sectionFourParts}`}
+          >
             <div className="col-3 d-flex justify-content-center  align-items-center flex-column">
               <img
                 src={i18n.language === "ar" ? sec3_P1_AR : imgs.sec3_P1}
                 className={`${style.Sec3_S_img_Marketing}`}
               />
               <p
-                className={`${style["Sec3_P_S"]}  text-black text-center ${style.sec3Desimg}`}
+                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} `}
               >
                 {t("Business alignment")}
               </p>
@@ -142,7 +158,7 @@ function DigitalMarketing() {
                 className={`${style.Sec3_S_img_Marketing}`}
               />
               <p
-                className={`${style["Sec3_P_S"]}  text-black ${style.sec3Desimg} `}
+                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} `}
               >
                 {t("Content creation")}
               </p>
@@ -153,7 +169,7 @@ function DigitalMarketing() {
                 className={`${style.Sec3_S_img_Marketing}`}
               />
               <p
-                className={`${style["Sec3_P_S"]}  text-black text-center ${style.sec3Desimg}`}
+                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes}`}
               >
                 {t("Performance optimization")}
               </p>
@@ -162,12 +178,16 @@ function DigitalMarketing() {
         </div>
 
         <div className={`mt-sm-5 ${style.sectionFour}`}>
-          <section className="row">
-            <div className="col-7">
-              <h2 className={`${styles.cardH1Font} ${styles.glitch} }`}>
+          <section className={`row ${style.sectionFourcol} `}>
+            <div className="col-6">
+              <h2
+                className={`${styles.cardH1Font} ${styles.glitch} ${style.sectionFourHeader}`}
+              >
                 {t("Why Choose Us?")}
               </h2>
-              <p className={`${styles.paragraph} my-sm-5 }`}>
+              <p
+                className={`${styles.paragraph} my-sm-5 ${style.sectionFourParagraph}`}
+              >
                 {t(
                   "We’re not just marketers – we are digital growth strategists. We plan and execute data-driven campaigns that deliver measurable results and build lasting brand engagement across every platform."
                 )}
@@ -178,17 +198,19 @@ function DigitalMarketing() {
               className={`col-5 align-content-center ${style.sectionFourList}`}
             >
               <li className="list-unstyled d-flex flex-column gap-4">
-                <ul className={` ${styles.paragraph} align-content-center `}>
+                <ul
+                  className={` ${styles.paragraph} align-content-center ${style.ulSectionFour}`}
+                >
                   <img
                     src={imgs.sec3_S4}
                     className={`${style["Sec3_S_img_S"]} mx-2`}
                     alt="..."
                   />
-                  <div className={` ${style.ulSectionFour}`}>
+                  <div className={` ${style.ulSectionFour} `}>
                     {t("Analytical & Data-Driven")}
                   </div>
                 </ul>
-                <ul className={` ${styles.paragraph} `}>
+                <ul className={` ${styles.paragraph}  ${style.ulSectionFour}`}>
                   <img
                     src={imgs.sec3_S5}
                     className={`${style["Sec3_S_img_S"]} mx-2`}
@@ -196,7 +218,7 @@ function DigitalMarketing() {
                   />
                   {t("Multi-Platform Strategy")}
                 </ul>
-                <ul className={` ${styles.paragraph} `}>
+                <ul className={` ${styles.paragraph} ${style.ulSectionFour} `}>
                   <img
                     src={imgs.sec3_S6}
                     className={`${style["Sec3_S_img_S"]} mx-2`}

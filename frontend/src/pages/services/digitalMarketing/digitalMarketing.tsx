@@ -113,7 +113,7 @@ function DigitalMarketing() {
                 className={`${style["img_S"]} ${style.imgSec2Marketing}`}
               />
               <h3
-                className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S_2"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S_2"]} ${style.mtMarketing}`}
               >
                 {t("Results across channels")}
               </h3>
@@ -147,7 +147,7 @@ function DigitalMarketing() {
                 className={`${style.Sec3_S_img_Marketing}`}
               />
               <p
-                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} `}
+                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} ${style.SectionThreeDesMarketing} `}
               >
                 {t("Business alignment")}
               </p>
@@ -158,7 +158,7 @@ function DigitalMarketing() {
                 className={`${style.Sec3_S_img_Marketing}`}
               />
               <p
-                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} `}
+                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} ${style.SectionThreeDesMarketing} `}
               >
                 {t("Content creation")}
               </p>
@@ -169,7 +169,7 @@ function DigitalMarketing() {
                 className={`${style.Sec3_S_img_Marketing}`}
               />
               <p
-                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes}`}
+                className={`${style["Sec3_P_S"]} ${styles.paragraph} ${style.SectionThreeDes} ${style.SectionThreeDesMarketing}`}
               >
                 {t("Performance optimization")}
               </p>

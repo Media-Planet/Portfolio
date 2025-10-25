@@ -280,6 +280,17 @@
     left: -18.4vw;
     margin-bottom: 10vw;
   }
+  .SectionThreeDesMarketing {
+    left: 1vw;
+  }
+  .mtMarketing {
+    margin-top: 17vw;
+  }
+  .imgSec2Marketing {
+    top: 12vw;
+    position: relative;
+    right: -45vw;
+  }
   .sectionFour {
     top: -35vw;
   }
@@ -351,6 +362,9 @@
   .paragraphWeb {
     position: relative;
     left: 10vw;
+  }
+  .imgSec2Marketing {
+    margin-top: -74vw;
   }
   .SectionOneTitle {
     margin-bottom: -12vw !important;

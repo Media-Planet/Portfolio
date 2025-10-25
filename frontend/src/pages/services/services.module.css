@@ -311,6 +311,13 @@
   .ulSectionFour {
     font-size: 3.2vw;
   }
+  .mtSec2_boardGamePage {
+    margin-top: 18vw;
+  }
+  .imgSec2BoardG {
+    top: 14vw;
+    left: 40vw;
+  }
 }
 @media (max-width: 900px) {
   .SectionOneTitle {
@@ -335,8 +342,11 @@
     position: relative;
     left: 4vw;
   }
-  .img_S {
+  .img_S_SectionOne {
     display: none;
+  }
+  .imgSec2Web {
+    margin-top: -56vw;
   }
   .paragraphWeb {
     position: relative;
@@ -362,10 +372,23 @@
     left: -24vw;
     margin-top: 10vw;
   }
+  .mtSec2_boardGamePage {
+    margin-top: 0vw;
+  }
   @media (max-width: 450px) {
     .paragraphWeb {
       position: relative;
       left: 5vw;
+    }
+  }
+  @media (max-width: 689px) {
+    .imgSec2Web {
+      display: none;
+    }
+  }
+  @media (max-width: 575px) {
+    .sectionFourHeadBoardG {
+      margin-top: 13vw;
     }
   }
   @media (max-width: 402px) {
@@ -415,3 +438,4 @@
     left: -18vw;
   }
 }
+/* board game design page adjustments */

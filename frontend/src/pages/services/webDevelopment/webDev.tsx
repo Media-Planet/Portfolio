@@ -49,7 +49,7 @@ function WebDev() {
           <section className={`col p-0 ${style.codeImage}`}>
             <img
               src={imgs.photo}
-              className={`${style["img_S"]}`}
+              className={`${style["img_S"]} ${style.img_S_SectionOne}`}
               alt="... coding"
             />
           </section>
@@ -103,7 +103,7 @@ function WebDev() {
                 <li className={`${style["Sec2_Ul_S"]} ${styles.paragraph}`}>
                   <img
                     src={imgs.sec2_S4}
-                    className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]}`}
+                    className={`me-2 me-sm-4 ${style["Sec2_S_img_S"]} `}
                   />
                   {t("SEO & Performance Optimization")}
                 </li>

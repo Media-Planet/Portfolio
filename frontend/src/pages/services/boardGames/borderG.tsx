@@ -16,20 +16,29 @@ function BoardG() {
         className={`containerr bg-primary Times_New_RomanF_italic ${styles.cardCustom}`}
         dir={Direction || "ltr"}
       >
-        <h2 className={`${styles.cardH1Font} ${styles.glitch}  `}>
+        <h2
+          className={`${styles.cardH1Font} ${styles.glitch} ${style.SectionOneTitle}  `}
+        >
           {t("Board Games")}
         </h2>
-        <div className="row justify-content-between">
+        <div
+          className={`row justify-content-between ${style.firstSectionSecoundHalf}`}
+        >
           <section className="d-grid col-8 col-sm-7 pe-0">
             <p className={`${styles.paragraph} ${style.paragraphWeb}`}>
               {t(
                 "We design imaginative, visually striking board games that engage, entertain, and tell unforgettable stories."
               )}
             </p>
+            <img
+              src={imgs.photo}
+              className={`${style.imgWebDev2}`}
+              alt="... design board games"
+            />
             <div className={`${style.btnDiv}`}>
               <button className={`${style.btnCustom} ${style.btnWeb}`}>
                 <img
-                  className={`${styles.buttonLogo} me-2`}
+                  className={`${styles.buttonLogo} ${style.buttonLogo} me-2`}
                   src={imgs.logo}
                   alt="Media Planet"
                 />
@@ -40,7 +49,7 @@ function BoardG() {
           <section className={`col p-0 ${style.codeImage}`}>
             <img
               src={imgs.photo}
-              className={`${style["img_S"]}`}
+              className={`${style["img_S"]} ${style.img_S_SectionOne}`}
               alt="... design board games"
             />
           </section>
@@ -53,8 +62,8 @@ function BoardG() {
         </div>
 
         <div className={`${style.sectionTwo}`}>
-          <div className="row">
-            <section className="col-sm-6">
+          <div className={`row ${style.sectionTwocol} `}>
+            <section className={`col-sm-6 ${style.sectionTwoSub}`}>
               <h2
                 className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S"]}`}
               >
@@ -93,14 +102,16 @@ function BoardG() {
               </ul>
             </section>
 
-            <section className="col-sm-6">
+            <section
+              className={`col-sm-6 ${style.sectionTwoSub} ${style.sectionTwo2}`}
+            >
               <img
                 src={imgs.sec2_png1}
                 alt="#"
-                className={`${style["img_S"]}`}
+                className={`${style["img_S"]} ${style.imgSec2Web} ${style.imgSec2BoardG}  `}
               />
               <h3
-                className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S_2"]}`}
+                className={`${styles.cardH1Font} ${styles.glitch}  ${style["Sec2_H_S_2"]} ${style.mtSec2_boardGamePage}`}
               >
                 {t("Built for every player")}
               </h3>
@@ -111,8 +122,10 @@ function BoardG() {
               </p>
             </section>
           </div>
-          <div className="d-flex mt-3">
-            <p className="mx-5 border border-black w-25"></p>
+          <div className={`d-flex mt-3 ${style.sectionThreeHalfLine}`}>
+            <p
+              className={`mx-5 border border-black w-25 ${style.sectionThreeHalfLine}`}
+            ></p>
           </div>
         </div>
 
@@ -123,26 +136,41 @@ function BoardG() {
             {t("Our Approach")}
           </h2>
 
-          <section className="row gap-5 justify-content-around">
+          <section
+            className={`row gap-5 justify-content-around ${style.sectionFourParts}`}
+          >
             <div className="col-3 d-flex justify-content-center flex-column">
-              <img src={i18n.language === "ar" ? sec3_P1_AR : imgs.sec3_P1} />
+              <img
+                src={i18n.language === "ar" ? sec3_P1_AR : imgs.sec3_P1}
+                className={style.sectionFourWebImg}
+              />
             </div>
             <div className="col-3 d-flex justify-content-center flex-column text-center">
-              <img src={i18n.language === "ar" ? sec3_P2_AR : imgs.sec3_P2} />
+              <img
+                src={i18n.language === "ar" ? sec3_P2_AR : imgs.sec3_P2}
+                className={style.sectionFourWebImg}
+              />
             </div>
             <div className="col-3 d-flex justify-content-center flex-column text-center">
-              <img src={i18n.language === "ar" ? sec3_P3_AR : imgs.sec3_P3} />
+              <img
+                src={i18n.language === "ar" ? sec3_P3_AR : imgs.sec3_P3}
+                className={style.sectionFourWebImg}
+              />
             </div>
           </section>
         </div>
 
         <div className={`mt-sm-5 ${style.sectionFour}`}>
-          <section className="row">
+          <section className={`row ${style.sectionFourcol} `}>
             <div className="col-7">
-              <h2 className={`${styles.cardH1Font} ${styles.glitch}`}>
+              <h2
+                className={`${styles.cardH1Font} ${styles.glitch} ${style.sectionFourHeader} ${style.sectionFourHeadBoardG}`}
+              >
                 {t("Why Choose Us?")}
               </h2>
-              <p className={`${styles.paragraph} my-5 ${style["P_S4"]}`}>
+              <p
+                className={`${styles.paragraph} my-sm-5 ${style.sectionFourParagraph}`}
+              >
                 {t(
                   "We’re not just designers – we are digital storytellers. We create memorable board game experiences that draw players into new worlds of strategy and imagination."
                 )}
@@ -153,7 +181,9 @@ function BoardG() {
               className={`col-5 align-content-center ${style.sectionFourList}`}
             >
               <li className="list-unstyled d-flex flex-column gap-4">
-                <ul className={`${styles.paragraph} align-content-center`}>
+                <ul
+                  className={`${styles.paragraph} align-content-center ${style.ulSectionFour}`}
+                >
                   <img
                     src={imgs.sec3_S4}
                     className={`${style["Sec3_S_img_S"]} mx-2`}
@@ -161,7 +191,9 @@ function BoardG() {
                   />
                   {t("Innovative Concepts")}
                 </ul>
-                <ul className={` ${styles.paragraph}`}>
+                <ul
+                  className={`${styles.paragraph} align-content-center ${style.ulSectionFour}`}
+                >
                   <img
                     src={imgs.sec3_S5}
                     className={`${style["Sec3_S_img_S"]} mx-2`}
@@ -169,7 +201,9 @@ function BoardG() {
                   />
                   {t("Highly Visual & Immersive")}
                 </ul>
-                <ul className={` ${styles.paragraph} `}>
+                <ul
+                  className={`${styles.paragraph} align-content-center ${style.ulSectionFour}`}
+                >
                   <img
                     src={imgs.sec3_S6}
                     className={`${style["Sec3_S_img_S"]} mx-2`}

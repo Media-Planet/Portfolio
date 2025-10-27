@@ -12,7 +12,6 @@ import sec3_S5 from "../../../assets/Images/services/webDev/small_5.png";
 import sec3_S6 from "../../../assets/Images/services/webDev/small_6.png";
 import sec3_S7 from "../../../assets/Images/services/webDev/small_7.png";
 
-
 export default function Imgs() {
   return {
     photo,
@@ -30,3 +29,74 @@ export default function Imgs() {
     sec3_S7,
   };
 }
+
+// export const Data = {
+//     webDev: {
+//         headers: [
+//             'Web Development',
+//             'What Do We Do ?',
+//             'Built for every screen',
+//             'Our Approach',
+//             'Why Choose Us?'],
+
+//         paragraphs: [
+//             'We craft stunning, responsive websites that combine bold design with smooth functionality—built to impress and perform.',
+//             'From landing pages to full-scale platforms, we design websites that are fast, responsive, and built to tell your brand’s story in style.',
+//             'Your website will shine everywhere from big screens to mobile  devices without losing speed or style.',
+//             'We’re not just designers – we are digital storytellers. We create web experiences that connect people together and help your business stand out, grow online, and turn visitors into loyal customers.'],
+//         unOrderedList: {
+//             text: [
+//                 'Custom UI/UX Design',
+//                 'Responsive Development',
+//                 'E-commerce ',
+//                 'SEO & Performance Optimization',
+//                 'Fast Load Times',
+//                 'Accessible & User-Friendly',
+//                 'Built for Growth'],
+//             imgs: null
+//         },
+//         Approuch: {
+//             text: [
+//                 'Understand goals and user needs',
+//                 'Create beautiful, functional layouts',
+//                 'Develop and launch with precision'],
+//             imgs: null
+//         },
+//         imgs: ['']
+
+//     },
+//     Border: {
+//         headers: [
+//             'Web Development',
+//             'What Do We Do ?',
+//             'Built for every screen',
+//             'Our Approach',
+//             'Why Choose Us?'],
+
+//         paragraphs: [
+//             'We craft stunning, responsive websites that combine bold design with smooth functionality—built to impress and perform.',
+//             'From landing pages to full-scale platforms, we design websites that are fast, responsive, and built to tell your brand’s story in style.',
+//             'Your website will shine everywhere from big screens to mobile  devices without losing speed or style.',
+//             'We’re not just designers – we are digital storytellers. We create web experiences that connect people together and help your business stand out, grow online, and turn visitors into loyal customers.'],
+//         unOrderedList: {
+//             text: [
+//                 'Custom UI/UX Design',
+//                 'Responsive Development',
+//                 'E-commerce ',
+//                 'SEO & Performance Optimization',
+//                 'Fast Load Times',
+//                 'Accessible & User-Friendly',
+//                 'Built for Growth'],
+//             imgs: null
+//         },
+//         Approuch: {
+//             text: [
+//                 'Understand goals and user needs',
+//                 'Create beautiful, functional layouts',
+//                 'Develop and launch with precision'],
+//             imgs: null
+//         },
+//         imgs: ['']
+
+//     }
+// }

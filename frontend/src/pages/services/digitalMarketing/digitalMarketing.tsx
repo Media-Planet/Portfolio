@@ -59,12 +59,6 @@ function DigitalMarketing() {
               <p className={`InterF text-black ${style['Sec2_P_S_2']}`}>{t("From organic search to paid ads, social media content - we get results through diverse digital channels.")}
               </p>
 
-                        </section>
-                    </div>
-                    <div className='d-flex mt-3'>
-                        <p className='mx-5 border border-black w-25'></p>
-                    </div>
-                </div>
             </section>
           </div>
           <div className='d-flex mt-3'>
@@ -75,21 +69,6 @@ function DigitalMarketing() {
         <div>
           <h2 className={`Times_New_RomanF_italic text-black mb-4 mt-2 mt-sm-2 mb-sm-5 ${style['H_S3']}`}>{t("Our Approach")}</h2>
 
-                    <section className='row gap-5 justify-content-around'>
-                        <div className='col-3 d-flex justify-content-center flex-column'>
-                            <img src={(i18n.language === "ar") ? sec3_P1_AR : imgs.sec3_P1} />
-                            <p className={`${style['Sec3_P_S']} InterF text-black text-center`}>{t("Understand your business and campaign goals.")}</p>
-                        </div>
-                        <div className='col-3 d-flex justify-content-center flex-column text-center'>
-                            <img src={(i18n.language === "ar") ? sec3_P2_AR : imgs.sec3_P2} />
-                            <p className={`${style['Sec3_P_S']} InterF text-black`}>{t("Produce high quality and engaging content for each platform.")}</p>
-                        </div>
-                        <div className='col-3 d-flex justify-content-center flex-column text-center'>
-                            <img src={(i18n.language === "ar") ? sec3_P3_AR : imgs.sec3_P3} />
-                            <p className={`${style['Sec3_P_S']} InterF text-black`}>{t("Analyze data and optimize campaign.")}</p>
-                        </div>
-                    </section>
-                </div>
           <section className='row gap-5 justify-content-around'>
             <div className='col-3 d-flex justify-content-center flex-column'>
               <img src={(i18n.language === "ar") ? sec3_P1_AR : imgs.sec3_P1} />
@@ -108,12 +87,6 @@ function DigitalMarketing() {
 
         <div className='mt-sm-5'>
 
-                    <section className='row'>
-                        <div className='col-7'>
-                            <h2 className={`Times_New_RomanF_italic text-black mt-2 mb-5 ${style['H_S']}`}>{t("Why Choose Us?")}</h2>
-                            <p className={`InterF text-black my-5 ${style['P_S']}`}>{t("We’re not just marketers – we are digital growth strategists. We plan and execute data-driven campaigns that deliver measurable results and build lasting brand engagement across every platform.")}
-                            </p>
-                        </div>
           <section className='row'>
             <div className='col-7'>
               <h2 className={`Times_New_RomanF_italic text-black mt-2 mb-5 ${style['H_S']}`}>{t("Why Choose Us?")}</h2>

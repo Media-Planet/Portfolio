@@ -17,6 +17,25 @@ interface Service {
     route: string;
 }
 function Home() {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        // Handle form submission logic here
+        const formData = new FormData(event.currentTarget);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const designId = formData.get('designId');
+        const phone = formData.get('phone');
+        const description = formData.get('description');
+
+        const dataForm = {
+            name,
+            email,
+            designId,
+            phone,
+            description
+        };
+        console.log("submitted",dataForm);
+    }
 
     const [t, i18n] = useTranslation();
 
@@ -136,20 +155,24 @@ function Home() {
                             {t("Start now :)")}
                         </h1>
                         <div className={`col-md-6 ${styles.formRes} mt-4 mt-md-0`}>
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <div className="mb-3">
                                     <input
                                         type="text"
+                                        name="name"
                                         className={`form-control  bg-transparent ${styles.form}`}
                                         placeholder={t("Enter your name")}
+                                        required 
                                     />
                                 </div>
 
                                 <div className="mb-3">
                                     <input
                                         type="email"
+                                        name="email"
                                         className={`form-control  bg-transparent ${styles.form}`}
                                         placeholder={t("Enter your E-Mail")}
+                                        required 
                                     />
                                 </div>
 
@@ -157,21 +180,26 @@ function Home() {
                                     <div className="col">
                                         <input
                                             type="text"
+                                            name="designId"
                                             className={`form-control  bg-transparent ${styles.form}`}
                                             placeholder={t("Design ID")}
                                         />
                                     </div>
                                     <div className="col">
                                         <input
-                                            type="text"
+                                            type="tel"
+                                            name="phone"
+                                            pattern="[0-9]{11}" 
                                             className={`form-control  bg-transparent ${styles.form}`}
                                             placeholder={t("Phone number")}
+                                            required 
                                         />
                                     </div>
                                 </div>
 
                                 <div className="mb-3">
                                     <textarea
+                                        name="description"
                                         className={`form-control  bg-transparent ${styles.form} ${styles.form_2}`}
                                         placeholder={t("Description")}
                                         rows={3}

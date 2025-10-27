@@ -67,79 +67,45 @@ function BoardG() {
         </div>
 
 
-                <div>
-<<<<<<<<< Temporary merge branch 1
-                    <h2 className={`Times_New_RomanF_italic text-black mt-1 mt-sm-2 mb-sm-5 ${style['H_S3']}`}>Our Approach</h2>
+        <div>
+          <h2 className={`Times_New_RomanF_italic text-black mt-1 mt-sm-2 mb-sm-5 ${style['H_S3']}`}>{t("Our Approach")}</h2>
 
-                    <section className='row gap-5 justify-content-around'>
-                        <div className='col-3 d-flex justify-content-center flex-column'>
-                            <img src={imgs.sec3_P1} />
-                        </div>
-                        <div className='col-3 d-flex justify-content-center flex-column text-center'>
-                            <img src={imgs.sec3_P2} />
-                        </div>
-                        <div className='col-3 d-flex justify-content-center flex-column text-center'>
-                            <img src={imgs.sec3_P3} />
-                        </div>
-                    </section>
-
-=========
-                    <h2 className={`Times_New_RomanF_italic text-black mt-1 mt-sm-2 mb-sm-5 ${style['H_S3']}`}>{t("Our Approach")}</h2>
-
-                    <section className='row gap-5 justify-content-around'>
-                        <div className='col-3 d-flex justify-content-center flex-column'>
-                            <img src={(i18n.language === "ar") ? sec3_P1_AR : imgs.sec3_P1} />
-                        </div>
-                        <div className='col-3 d-flex justify-content-center flex-column text-center'>
-                            <img src={(i18n.language === "ar") ? sec3_P2_AR : imgs.sec3_P2} />
-                        </div>
-                        <div className='col-3 d-flex justify-content-center flex-column text-center'>
-                            <img src={(i18n.language === "ar") ? sec3_P3_AR : imgs.sec3_P3} />
-                        </div>
-                    </section>
->>>>>>>>> Temporary merge branch 2
-                </div>
+          <section className='row gap-5 justify-content-around'>
+            <div className='col-3 d-flex justify-content-center flex-column'>
+              <img src={(i18n.language === "ar") ? sec3_P1_AR : imgs.sec3_P1} />
+            </div>
+            <div className='col-3 d-flex justify-content-center flex-column text-center'>
+              <img src={(i18n.language === "ar") ? sec3_P2_AR : imgs.sec3_P2} />
+            </div>
+            <div className='col-3 d-flex justify-content-center flex-column text-center'>
+              <img src={(i18n.language === "ar") ? sec3_P3_AR : imgs.sec3_P3} />
+            </div>
+          </section>
+        </div>
 
         <div className='mt-sm-5'>
 
-                    <section className='row'>
-                        <div className='col-7'>
-<<<<<<<<< Temporary merge branch 1
-                            <h2 className={`Times_New_RomanF_italic text-black mt-2 mb-5 ${style['H_S4']}`}>Why Choose Us?</h2>
-                            <p className={`InterF text-black my-5 ${style['P_S4']}`}>We’re not just designers – we are digital storytellers.
-                                We create memorable board game experiences
-                                that draw players into new worlds of strategy and imagination.
-=========
-                            <h2 className={`Times_New_RomanF_italic text-black mt-2 mb-5 ${style['H_S4']}`}>{t("Why Choose Us?")}</h2>
-                            <p className={`InterF text-black my-5 ${style['P_S4']}`}>{t("We’re not just designers – we are digital storytellers. We create memorable board game experiences that draw players into new worlds of strategy and imagination.")}
->>>>>>>>> Temporary merge branch 2
-                            </p>
-                        </div>
+          <section className='row'>
+            <div className='col-7'>
+              <h2 className={`Times_New_RomanF_italic text-black mt-2 mb-5 ${style['H_S4']}`}>{t("Why Choose Us?")}</h2>
+              <p className={`InterF text-black my-5 ${style['P_S4']}`}>{t("We’re not just designers – we are digital storytellers. We create memorable board game experiences that draw players into new worlds of strategy and imagination.")}
+              </p>
+            </div>
 
-                        <div className='col-5 align-content-center'>
-                            <li className='list-unstyled d-flex flex-column gap-4'>
-                                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
-<<<<<<<<< Temporary merge branch 1
-                                    <img src={imgs.sec3_S4} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />Innovative Concepts
-                                </ul>
-                                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
-                                    <img src={imgs.sec3_S5} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />Highly Visual & Immersive
-                                </ul>
-                                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
-                                    <img src={imgs.sec3_S6} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />Strategic & Fun to play
-=========
-                                    <img src={imgs.sec3_S4} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />{t("Innovative Concepts")}
-                                </ul>
-                                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
-                                    <img src={imgs.sec3_S5} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />{t("Highly Visual & Immersive")}
-                                </ul>
-                                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
-                                    <img src={imgs.sec3_S6} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />{t("Strategic & Fun to play")}
->>>>>>>>> Temporary merge branch 2
-                                </ul>
-                            </li>
-                        </div>
-                    </section>
+            <div className='col-5 align-content-center'>
+              <li className='list-unstyled d-flex flex-column gap-4'>
+                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
+                  <img src={imgs.sec3_S4} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />{t("Innovative Concepts")}
+                </ul>
+                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
+                  <img src={imgs.sec3_S5} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />{t("Highly Visual & Immersive")}
+                </ul>
+                <ul className={`${style['Sec3_Ul_S']} InterF text-black align-content-center`}>
+                  <img src={imgs.sec3_S6} className={`${style['Sec3_S_img_S']} mx-2`} alt="..." />{t("Strategic & Fun to play")}
+                </ul>
+              </li>
+            </div>
+          </section>
 
         </div>
       </div>
